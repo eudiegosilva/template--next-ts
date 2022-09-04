@@ -1,5 +1,6 @@
-import { Head, Html, Main, NextScript } from 'next/document'
-import { getCssText } from 'styles/stitches.config'
+import { Head, Html, Main, NextScript } from 'next/document';
+
+import { getCssText } from 'styles/stitches.config';
 
 export default function MyDocument() {
   return (
@@ -15,5 +16,5 @@ export default function MyDocument() {
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }

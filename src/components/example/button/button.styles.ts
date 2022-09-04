@@ -3,6 +3,7 @@ import { styled } from 'styles/stitches.config';
 export const Button = styled('button', {
   padding: '$spacing-md $spacing-xl',
   fontSize: '$font-size-body-md',
+  fontFamily: '$font-family-epilogue',
   border: '2px solid',
   transition: '$transition-default',
 
@@ -23,7 +24,8 @@ export const Button = styled('button', {
       },
       secondary: {
         backgroundColor: '$color-brand-secondary-300',
-        color: '$color-base-black-500',
+        borderColor: '$color-brand-secondary-300',
+        color: '$color-base-white-500',
         '&:hover': {
           backgroundColor: '$color-brand-secondary-400',
           borderColor: '$color-brand-secondary-400'

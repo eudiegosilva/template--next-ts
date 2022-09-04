@@ -7,7 +7,7 @@ const HomeTemplate = () => {
     <s.Wrapper>
       <h1>Title</h1>
       <h5>Subtitle</h5>
-      <Example.Button>button label</Example.Button>
+      <Example.Button>Button</Example.Button>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit
         perferendis unde consequatur labore quasi illum, est porro hic dolorem

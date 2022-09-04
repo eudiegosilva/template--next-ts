@@ -1,7 +1,7 @@
 import * as s from './button.styles';
 
 export type ButtonProps = {
-  children?: React.ReactNode;
+  children: React.ReactNode;
   variant?: 'primary' | 'secondary';
   type?: 'button' | 'submit' | 'reset';
   isFullWidth?: boolean;
@@ -9,7 +9,7 @@ export type ButtonProps = {
 };
 
 const Button = ({
-  children = 'button example',
+  children,
   variant = 'primary',
   type = 'button',
   isFullWidth = false,

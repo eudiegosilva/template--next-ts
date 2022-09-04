@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "yarn open-browser && next dev",
+    "open-browser": "open http://localhost:3000",
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "start": "next start",
     "prepare": "husky install"

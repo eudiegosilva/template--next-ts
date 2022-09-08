@@ -1,5 +1,5 @@
 import * as border from './borders';
-import * as color from './colors/color-tokens';
+import * as color from './colors';
 import * as font from './fonts';
 import { opacity } from './opacities';
 import { spacing } from './spacings';

@@ -1,9 +1,9 @@
 const zIndex = {
-  'z-index-base': 10,
-  'z-index-menu': 20,
-  'z-index-overlay': 30,
-  'z-index-modal': 40,
-  'z-index-alwaysOnTop': 50
+  base: 10,
+  menu: 20,
+  overlay: 30,
+  modal: 40,
+  alwaysOnTop: 50
 };
 
 export { zIndex };

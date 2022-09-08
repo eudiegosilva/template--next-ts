@@ -1,6 +1,6 @@
 const transition = {
-  'transition-default': '.3s ease',
-  'transition-fast': '.1s ease'
+  default: '.3s ease',
+  fast: '.1s ease'
 };
 
 export { transition };

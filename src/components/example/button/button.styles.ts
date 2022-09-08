@@ -1,34 +1,33 @@
 import { styled } from 'styles/stitches.config';
 
-export const Button = styled('button', {
-  padding: '$spacing-md $spacing-xl',
-  fontSize: '$font-size-body-md',
-  fontFamily: '$font-family-epilogue',
-  border: '2px solid',
-  transition: '$transition-default',
-
+export const ButtonWrapper = styled('button', {
+  padding: '$sm $md',
+  fontFamily: '$body',
+  fontSize: '$md',
+  border: '1px solid',
+  fontWeight: '$300',
+  transition: '$default',
   '&:hover': {
     cursor: 'pointer'
   },
-
   variants: {
     variant: {
       primary: {
-        backgroundColor: '$color-brand-primary-300',
-        borderColor: '$color-brand-primary-300',
-        color: '$color-base-white-500',
+        backgroundColor: '$brand-primary-300',
+        color: '$base-white-500',
+        borderColor: '$brand-primary-300',
         '&:hover': {
-          backgroundColor: '$color-brand-primary-400',
-          borderColor: '$color-brand-primary-400'
+          backgroundColor: '$brand-primary-400',
+          borderColor: '$brand-primary-400'
         }
       },
       secondary: {
-        backgroundColor: '$color-brand-secondary-300',
-        borderColor: '$color-brand-secondary-300',
-        color: '$color-base-white-500',
+        backgroundColor: '$brand-secondary-300',
+        color: '$base-white-500',
+        borderColor: '$brand-secondary-300',
         '&:hover': {
-          backgroundColor: '$color-brand-secondary-400',
-          borderColor: '$color-brand-secondary-400'
+          backgroundColor: '$brand-secondary-400',
+          borderColor: '$brand-secondary-400'
         }
       }
     },

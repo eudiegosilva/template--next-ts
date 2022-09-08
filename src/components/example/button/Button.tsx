@@ -16,14 +16,14 @@ const Button = ({
   handleClick
 }: ButtonProps) => {
   return (
-    <s.Button
+    <s.ButtonWrapper
       type={type}
       variant={variant}
       isFullWidth={isFullWidth}
       onClick={handleClick}
     >
       {children}
-    </s.Button>
+    </s.ButtonWrapper>
   );
 };
 

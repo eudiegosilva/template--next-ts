@@ -7,16 +7,16 @@ export default {
   component: Button,
   args: {
     variant: 'primary',
-    children: 'Button',
+    children: 'click me',
     type: 'button',
     isFullWidth: false
   },
   argTypes: {
     children: {
-      description: 'component label',
+      description: 'Button label',
       table: {
         defaultValue: {
-          summary: 'button example'
+          summary: 'click me'
         }
       }
     },
@@ -33,10 +33,11 @@ export default {
       description: 'event executed when the component is clicked',
       action: 'button-clicked'
     }
-  }
+  },
+  parameters: {}
 } as Meta;
 
-export const ButtonDefault: Story<ButtonProps> = args => {
+export const ButtonExample: Story<ButtonProps> = args => {
   const { children } = args;
   return <Button {...args}>{children}</Button>;
 };

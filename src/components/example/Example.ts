@@ -1,7 +1,9 @@
 import { Button } from './button/Button';
+import { Typography } from './typography/Typography';
 
 const Example = {
-  Button
+  Button,
+  Typography
 };
 
 export { Example };

@@ -24,6 +24,8 @@ export default function MyDocument() {
           href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
           rel="stylesheet"
         ></link>
+        <title>@diegosilvatech––template–nextjs</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <body>
         <Main />

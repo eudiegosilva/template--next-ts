@@ -2,7 +2,7 @@ import { useTheme } from 'next-themes';
 import Head from 'next/head';
 import { useState } from 'react';
 
-import { Button } from 'components';
+import { Button, Icon } from 'components';
 
 import * as s from './home.template.styles';
 
@@ -30,6 +30,8 @@ const HomeTemplate = () => {
             switch theme
           </Button>
         </s.Section>
+
+        <Icon color="#ffcb00" />
       </s.Wrapper>
     </>
   );

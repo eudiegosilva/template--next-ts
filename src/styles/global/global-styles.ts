@@ -7,7 +7,6 @@ export const globalStyles = globalCss({
     boxSizing: 'border-box'
   },
   'html, body': {
-    backgroundColor: '$primary-01',
     fontFamily: '$body',
     WebkitFontSmoothing: 'antialiased',
     '&::-webkit-scrollbar': {

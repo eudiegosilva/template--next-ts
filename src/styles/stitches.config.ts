@@ -28,7 +28,7 @@ export const {
   theme: {
     borderStyles: {},
     borderWidths: {},
-    colors: { ...colors.darkPalette },
+    colors: { ...colors.lightPalette },
     fonts: { ...fonts.families },
     fontSizes: { ...fonts.sizes },
     fontWeights: { ...fonts.weights },

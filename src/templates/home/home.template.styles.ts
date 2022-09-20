@@ -5,8 +5,14 @@ export const Wrapper = styled('main', {
   height: '100vh',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center',
-  flexDirection: 'column'
+  justifyContent: 'center'
+});
+
+export const Section = styled('section', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center'
 });
 
 export const Title = styled('h1', {

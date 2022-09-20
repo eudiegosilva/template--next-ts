@@ -22,10 +22,14 @@ const HomeTemplate = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <s.Wrapper>
-        <s.Title>
-          diegosilvatech/template--<strong>next-ts</strong>
-        </s.Title>
-        <Button handleClick={toggleTheme}>switch theme</Button>
+        <s.Section>
+          <s.Title>
+            diegosilvatech/template--<strong>next-ts</strong>
+          </s.Title>
+          <Button isFullWidth handleClick={toggleTheme}>
+            switch theme
+          </Button>
+        </s.Section>
       </s.Wrapper>
     </>
   );

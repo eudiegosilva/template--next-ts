@@ -15,12 +15,12 @@ export const ButtonWrapper = styled('button', {
     variant: {
       primary: {
         backgroundColor: '$primary-03',
-        borderColor: '$primary-07',
-        color: '$primary-09',
+        borderColor: '$primary-03',
+        color: '$primary-11',
         '&:hover': {
           backgroundColor: '$primary-04',
-          borderColor: '$primary-08',
-          color: '$primary-09'
+          borderColor: '$primary-04',
+          color: '$primary-11'
         }
       },
       secondary: {

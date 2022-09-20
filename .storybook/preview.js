@@ -5,15 +5,6 @@ globalStyles();
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
-  // backgrounds: {
-  //   default: 'primary-03',
-  //   values: [
-  //     {
-  //       name: 'primary-03',
-  //       value: tokens.colors.lightPalette['primary-03']
-  //     }
-  //   ]
-  // },
   controls: {
     a11y: { disable: true },
     matchers: {

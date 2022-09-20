@@ -7,18 +7,14 @@ export default {
   component: Button,
   args: {
     variant: 'primary',
-    children: 'click me',
+    children: 'Button',
     type: 'button',
     isFullWidth: false
   },
   argTypes: {
     children: {
       description: 'Button label',
-      table: {
-        defaultValue: {
-          summary: 'click me'
-        }
-      }
+      table: { defaultValue: { summary: '' } }
     },
     type: {
       description: 'specifies the type of component'

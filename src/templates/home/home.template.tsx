@@ -2,7 +2,7 @@ import { useTheme } from 'next-themes';
 import Head from 'next/head';
 import { useState } from 'react';
 
-import { Button, Icon } from 'components';
+import { Button } from 'components';
 
 import * as s from './home.template.styles';
 

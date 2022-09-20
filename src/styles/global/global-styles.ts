@@ -6,18 +6,19 @@ export const globalStyles = globalCss({
     padding: 0,
     boxSizing: 'border-box'
   },
-  '*::before': {
-    margin: 0,
-    padding: 0,
-    boxSizing: 'border-box'
-  },
-  '*::after': {
-    margin: 0,
-    padding: 0,
-    boxSizing: 'border-box'
-  },
-  body: {
-    height: '100vh',
-    fontFamily: '$body'
+  'html, body': {
+    backgroundColor: '$primary-01',
+    fontFamily: '$body',
+    WebkitFontSmoothing: 'antialiased',
+    '&::-webkit-scrollbar': {
+      backgroundColor: 'transparent',
+      width: 4
+    },
+    '&::-webkit-scrollbar-track': {
+      backgroundColor: 'transparent'
+    },
+    '&::-webkit-scrollbar-thumb': {
+      backgroundColor: '$brand-primary-09'
+    }
   }
 });

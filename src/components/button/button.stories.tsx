@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import { Button, ButtonProps } from './Button';
 
 export default {
-  title: 'Examples/Button',
+  title: 'Atoms/Button',
   component: Button,
   args: {
     variant: 'primary',

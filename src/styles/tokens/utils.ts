@@ -1,4 +1,4 @@
-const util = {
+const utils = {
   mx: (value: string) => ({
     marginLeft: value,
     marginRight: value
@@ -9,4 +9,4 @@ const util = {
   })
 };
 
-export { util };
+export { utils };

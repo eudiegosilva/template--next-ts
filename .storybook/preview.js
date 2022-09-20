@@ -5,19 +5,15 @@ globalStyles();
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
-  backgrounds: {
-    default: 'color-neutral-white-500',
-    values: [
-      {
-        name: 'color-neutral-white-500',
-        value: tokens.color.neutral['color-neutral-white-500']
-      },
-      {
-        name: '$color-neutral-black-500',
-        value: tokens.color.neutral['color-neutral-black-500']
-      }
-    ]
-  },
+  // backgrounds: {
+  //   default: 'primary-03',
+  //   values: [
+  //     {
+  //       name: 'primary-03',
+  //       value: tokens.colors.lightPalette['primary-03']
+  //     }
+  //   ]
+  // },
   controls: {
     a11y: { disable: true },
     matchers: {

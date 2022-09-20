@@ -1,6 +1,6 @@
-const transition = {
+const transitions = {
   default: '.3s ease',
   fast: '.1s ease'
 };
 
-export { transition };
+export { transitions };

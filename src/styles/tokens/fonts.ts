@@ -1,9 +1,10 @@
-const family = {
-  heading: '"Josefin Sans", serif',
-  body: 'Epilogue, sans-serif'
+const families = {
+  heading: 'Epilogue, sans-serif',
+  body: 'Epilogue, sans-serif',
+  code: 'Epilogue, sans-serif'
 };
 
-const size = {
+const sizes = {
   ss: '0.625rem', // 10px
   xs: '0.75rem', // 12px
   sm: '0.875rem', // 14px
@@ -18,7 +19,7 @@ const size = {
   '7x': '6rem' // 96px
 };
 
-const weight = {
+const weights = {
   100: 100,
   200: 200,
   300: 300,
@@ -30,11 +31,12 @@ const weight = {
   900: 900
 };
 
-const letterSpacing = {
-  heading: '-0.01rem'
+const letterSpacings = {
+  heading: '-0.01rem',
+  body: '0.05rem'
 };
 
-const lineHeight = {
+const lineHeights = {
   100: '100%',
   115: '115%',
   120: '120%',
@@ -44,4 +46,4 @@ const lineHeight = {
   200: '200%'
 };
 
-export { family, size, weight, letterSpacing, lineHeight };
+export { families, sizes, weights, letterSpacings, lineHeights };

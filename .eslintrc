@@ -36,13 +36,12 @@
       {
         "newlinesBetween": "always",
         "groups": [
-          "/^react/",
-          "/^next/",
+          ["/^react/", "/^next/"],
+          ["/^next-themes/", "/^next-seo/"],
           "/^@stitches/",
           "module",
-          ["parent", "sibling", "index"],
-          "/^styles/",
-          "/./*.styles/"
+          ["/^styles/", "/./*.styles/"],
+          ["parent", "sibling", "index"]
         ],
         "alphabetize": {
           "order": "asc",

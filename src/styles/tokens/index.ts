@@ -1,10 +1,23 @@
-import * as border from './borders';
-import * as color from './colors';
-import * as font from './fonts';
-import { opacity } from './opacities';
-import { spacing } from './spacings';
-import { transition } from './transitions';
-import { util } from './utils';
-import { zIndex } from './z-indices';
+import * as borders from './borders';
+import * as colors from './colors';
+import * as fonts from './fonts';
+import { medias } from './medias';
+import { opacities } from './opacities';
+import { sizes } from './sizes';
+import { spacings } from './spacings';
+import { transitions } from './transitions';
+import { utils } from './utils';
+import { zIndices } from './z-indices';
 
-export { border, color, font, opacity, spacing, transition, util, zIndex };
+export {
+  borders,
+  colors,
+  fonts,
+  medias,
+  opacities,
+  sizes,
+  spacings,
+  transitions,
+  utils,
+  zIndices
+};

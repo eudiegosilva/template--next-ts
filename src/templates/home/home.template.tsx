@@ -31,7 +31,7 @@ const HomeTemplate = () => {
           </Button>
         </s.Section>
 
-        <Icon color="#ffcb00" />
+        <Icon />
       </s.Wrapper>
     </>
   );

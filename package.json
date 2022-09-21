@@ -13,7 +13,8 @@
     "start": "next start",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "generate": "yarn plop --plopfile generators/plopfile.js"
   },
   "dependencies": {
     "@radix-ui/colors": "^0.1.8",
@@ -56,6 +57,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "multiple-themes-stitches": "^0.0.10",
+    "plop": "^3.1.1",
     "prettier": "^2.7.1",
     "storybook-addon-next": "^1.6.7",
     "storybook-addon-pseudo-states": "^1.15.1",

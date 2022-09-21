@@ -27,13 +27,13 @@ module.exports = plop => {
       {
         type: 'add',
         path: '../src/components/index.ts',
-        templateFile: 'templates/injectable-index.ts.hbs',
+        templateFile: 'templates/injectable-component-index.ts.hbs',
         skipIfExists: true
       },
       {
         type: 'append',
         path: '../src/components/index.ts',
-        pattern: `/* PLOP_INJECT_EXPORT */`,
+        pattern: `/* PLOP_INJECT_COMPONENT_EXPORT */`,
         template: `export { {{pascalCase name}} } from './{{kebabCase name}}/{{pascalCase name}}';`
       }
     ]

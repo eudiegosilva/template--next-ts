@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import { Button, ButtonProps } from './Button';
 
-export default {
+const story: Meta<ButtonProps> = {
   title: 'Atoms/Button',
   component: Button,
   args: {
@@ -25,9 +25,11 @@ export default {
     }
   },
   parameters: {}
-} as Meta;
+};
 
 export const ButtonExample: Story<ButtonProps> = args => {
   const { children } = args;
   return <Button {...args}>{children}</Button>;
 };
+
+export default story;

@@ -10,7 +10,7 @@ const story: Meta<ContainerProps> = {
     children: { description: 'Container content' }
   },
   parameters: { layout: 'fullscreen' }
-} as Meta;
+};
 
 export const ContainerExample: Story<ContainerProps> = args => (
   <div

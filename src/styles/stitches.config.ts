@@ -13,7 +13,8 @@ import {
   medias
 } from './tokens';
 
-export type ConfigProps = Stitches.CSS<typeof config>;
+export type StichesConfigProps = Stitches.CSS<typeof config>;
+export type ColorTokensTypes = `$${keyof typeof colors.lightPalette}`;
 
 export const {
   config,

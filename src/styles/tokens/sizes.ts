@@ -1,8 +1,8 @@
 const sizes = {
-  sm: '450px',
-  md: '768px',
-  lg: '1170px',
-  xl: '1440px'
+  'container-sm': '450px',
+  'container-md': '768px',
+  'container-lg': '1170px',
+  'container-xl': '1440px'
 };
 
 export { sizes };

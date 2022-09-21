@@ -16,17 +16,11 @@ export default {
       description: 'Button label',
       table: { defaultValue: { summary: '' } }
     },
-    type: {
-      description: 'specifies the type of component'
-    },
-    isFullWidth: {
-      description: 'defines if the component is full width'
-    },
-    variant: {
-      description: 'main visual variations of the component'
-    },
+    type: { description: 'Specifies the type of component' },
+    isFullWidth: { description: 'Defines if the component is full width' },
+    variant: { description: 'Main visual variations of the component' },
     handleClick: {
-      description: 'event executed when the component is clicked',
+      description: 'Event executed when the component is clicked',
       action: 'button-clicked'
     }
   },

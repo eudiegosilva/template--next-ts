@@ -28,9 +28,9 @@ export const Fallback = styled(RadixAvatar.Fallback, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: 'white',
+  backgroundColor: '$primary-03',
   color: '$primary-11',
-  fontSize: 15,
-  lineHeight: 1,
-  fontWeight: 500
+  fontSize: '$sm',
+  lineHeight: '$100',
+  fontWeight: '$500'
 });

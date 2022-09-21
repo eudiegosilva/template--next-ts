@@ -1,5 +1,10 @@
 {
   "private": true,
+  "author": {
+    "name": "Diego Silva",
+    "email": "social.diegosilvatech@gmail.com",
+    "url": "https://linkedin.com/in/diegosilvatech"
+  },
   "scripts": {
     "build": "next build",
     "dev": "yarn open-browser && next dev",

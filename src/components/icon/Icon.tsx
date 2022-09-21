@@ -27,7 +27,12 @@ const iconAliases: { [key in IconNameTypes]: string } = {
   'share-solid': 'bxs-share'
 };
 
-const Icon = ({ name, size = 24, flip, color = '$primary-09' }: IconProps) => {
+const Icon = ({
+  name,
+  size = 24,
+  flip = false,
+  color = '$primary-09'
+}: IconProps) => {
   const iconFlip = flip ? 'bx-flip-horizontal' : '';
 
   return (

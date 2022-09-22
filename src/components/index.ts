@@ -1,4 +1,5 @@
 /* PLOP_INJECT_COMPONENT_EXPORT */
+export { Sphere } from './sphere/Sphere';
 export { Flex } from './flex/Flex';
 export { Box } from './box/Box';
 export { Separator } from './separator/Separator';

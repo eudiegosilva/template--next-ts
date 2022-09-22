@@ -1,14 +1,25 @@
+import { Container as ContainerComponent } from 'components/container/container.styles';
 import { styled } from 'styles/stitches.config';
 
+export const Container = styled('div', {
+  position: 'relative',
+  zIndex: '$root',
+  backgroundColor: '$primary-01'
+});
+
 export const Wrapper = styled('main', {
-  backgroundColor: '$primary-01',
   height: '100vh',
+  zIndex: '$base',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  overflow: 'hidden'
 });
 
 export const Section = styled('section', {
+  textAlign: 'center',
+  maxWidth: '$container-md',
+  px: '$3x',
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -17,13 +28,20 @@ export const Section = styled('section', {
 
 export const Title = styled('h1', {
   fontFamily: '$heading',
-  fontSize: '$md',
+  fontSize: '$3x',
   lineHeight: '$100',
   color: '$text-contrast-high',
-  fontWeight: '$500',
-  marginBottom: '$lg',
+  fontWeight: '$700',
+  marginBottom: '$lg'
+});
 
-  strong: {
-    color: '$primary-09'
-  }
+export const Strong = styled('strong', {});
+
+export const Description = styled('p', {
+  fontFamily: '$body',
+  fontSize: '$lg',
+  lineHeight: '$100',
+  color: '$text-contrast-low',
+  fontWeight: '$400',
+  marginBottom: '$lg'
 });

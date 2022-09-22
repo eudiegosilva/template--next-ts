@@ -1,8 +1,9 @@
-import * as borders from './borders';
-import * as colors from './colors';
-import * as fonts from './fonts';
+import { borders } from './borders';
+import { colors } from './colors';
+import { fonts } from './fonts';
 import { medias } from './medias';
 import { opacities } from './opacities';
+import { shadows } from './shadows';
 import { sizes } from './sizes';
 import { spacings } from './spacings';
 import { transitions } from './transitions';
@@ -16,6 +17,7 @@ export {
   medias,
   opacities,
   sizes,
+  shadows,
   spacings,
   transitions,
   utils,

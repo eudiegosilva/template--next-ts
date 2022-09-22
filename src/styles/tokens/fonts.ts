@@ -46,4 +46,4 @@ const lineHeights = {
   200: '200%'
 };
 
-export { families, sizes, weights, letterSpacings, lineHeights };
+export const fonts = { families, sizes, weights, letterSpacings, lineHeights };

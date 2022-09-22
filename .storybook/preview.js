@@ -6,6 +6,19 @@ globalStyles();
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+  backgrounds: {
+    default: 'background-light',
+    values: [
+      {
+        name: 'background-light',
+        value: tokens.colors.lightPalette['primary-01']
+      },
+      {
+        name: 'background-dark',
+        value: tokens.colors.darkPalette['primary-01']
+      }
+    ]
+  },
   controls: {
     a11y: { disable: true },
     matchers: { color: /(background|color)$/i, date: /Date$/ },

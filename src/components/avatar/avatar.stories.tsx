@@ -14,8 +14,14 @@ const story: Meta<AvatarProps> = {
   argTypes: {
     src: { description: 'Picture path' },
     alt: { description: 'Picture description' },
-    fallbackContent: { description: 'Fallback content' },
-    fallbackDelay: { description: 'Fallback delay' }
+    fallbackContent: {
+      description:
+        'Useful for delaying rendering so it only appears for those with slower connections.'
+    },
+    fallbackDelay: {
+      description:
+        'Useful for delaying rendering so it only appears for those with slower connections.'
+    }
   },
   parameters: {}
 };

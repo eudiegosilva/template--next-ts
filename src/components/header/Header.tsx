@@ -1,7 +1,8 @@
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
 
-import { Switch } from 'components';
+import { SunIcon, MoonIcon } from '@radix-ui/react-icons';
+import { Toggle } from 'components';
 
 import * as s from './header.styles';
 
@@ -16,14 +17,14 @@ const Header = () => {
     isDarkTheme ? setTheme('light') : setTheme('dark');
   };
 
+  const ThemeIcon = () => (theme === 'light' ? <MoonIcon /> : <SunIcon />);
+
   return (
     <s.Header>
       <s.HeaderContainer>
-        <Switch
-          label="light mode"
-          id="light-mode"
-          onCheckedChange={toggleTheme}
-        />
+        <Toggle onClick={toggleTheme}>
+          <ThemeIcon />
+        </Toggle>
       </s.HeaderContainer>
     </s.Header>
   );

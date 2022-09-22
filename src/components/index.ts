@@ -1,5 +1,5 @@
 /* PLOP_INJECT_COMPONENT_EXPORT */
-export { Switch } from './switch/Switch';
+export { Toggle } from './toggle/Toggle';
 export { Header } from './header/Header';
 export { Sphere } from './sphere/Sphere';
 export { Flex } from './flex/Flex';

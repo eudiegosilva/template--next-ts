@@ -5,7 +5,7 @@ export type ButtonProps = {
   variant?: 'primary' | 'secondary';
   type?: 'button' | 'submit' | 'reset';
   isFullWidth?: boolean;
-  handleClick?: () => void;
+  onClick?: () => void;
 };
 
 const Button = ({
@@ -13,14 +13,14 @@ const Button = ({
   variant = 'primary',
   type = 'button',
   isFullWidth = false,
-  handleClick
+  onClick
 }: ButtonProps) => {
   return (
     <s.ButtonWrapper
       type={type}
       variant={variant}
       isFullWidth={isFullWidth}
-      onClick={handleClick}
+      onClick={onClick}
     >
       {children}
     </s.ButtonWrapper>

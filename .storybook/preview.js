@@ -1,6 +1,6 @@
 import { RouterContext } from 'next/dist/shared/lib/router-context';
 import { globalStyles, tokens } from '../src/styles';
-import { lightTheme, darkTheme } from '../src/styles/stitches.config';
+import { theme } from '../src/styles/stitches.config';
 
 globalStyles();
 
@@ -11,11 +11,11 @@ export const parameters = {
     values: [
       {
         name: 'background-light',
-        value: tokens.colors.lightPalette['primary-01']
+        value: tokens.colors.light['primary-01']
       },
       {
         name: 'background-dark',
-        value: tokens.colors.darkPalette['primary-01']
+        value: tokens.colors.dark['primary-01']
       }
     ]
   },
@@ -29,8 +29,8 @@ export const parameters = {
   nextRouter: { Provider: RouterContext.Provider },
   multipleThemesStitches: {
     values: [
-      { name: 'light', theme: lightTheme },
-      { name: 'dark', theme: darkTheme }
+      { name: 'light', theme: theme.light },
+      { name: 'dark', theme: theme.dark }
     ]
   }
 };

@@ -2,10 +2,12 @@ import { colors } from './colors';
 
 const shadows = {
   dark: {
-    primary: `-4px 0px 0px 0px ${colors.dark['primary-01']}, 0px 0px 0px 0px ${colors.dark['primary-01']}`
+    normal: `0 2px 10px ${colors.dark['primary-03']}`,
+    focus: `0 0 0 2px ${colors.dark['primary-09']}`
   },
   light: {
-    primary: `-4px 0px 0px 0px ${colors.light['primary-01']}, 0px 0px 0px 0px ${colors.light['primary-01']}`
+    normal: `0 2px 10px ${colors.light['primary-03']}`,
+    focus: `0 0 0 2px ${colors.light['primary-09']}`
   }
 };
 

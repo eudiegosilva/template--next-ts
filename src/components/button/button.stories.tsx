@@ -19,7 +19,7 @@ const story: Meta<ButtonProps> = {
     type: { description: 'Specifies the type of component' },
     isFullWidth: { description: 'Defines if the component is full width' },
     variant: { description: 'Main visual variations of the component' },
-    handleClick: {
+    onClick: {
       description: 'Event executed when the component is clicked',
       action: 'button-clicked'
     }

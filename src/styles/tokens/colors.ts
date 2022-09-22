@@ -1,9 +1,11 @@
 import {
   violet,
   cyan,
+  crimson,
   mauve,
   violetDark,
   cyanDark,
+  crimsonDark,
   mauveDark,
   blackA,
   whiteA
@@ -64,10 +66,25 @@ const lightPalette = {
   'secondary-11': cyan.cyan11,
   'secondary-12': cyan.cyan12,
 
+  'tertiary-01': crimson.crimson1,
+  'tertiary-02': crimson.crimson2,
+  'tertiary-03': crimson.crimson3,
+  'tertiary-04': crimson.crimson4,
+  'tertiary-05': crimson.crimson5,
+  'tertiary-06': crimson.crimson6,
+  'tertiary-07': crimson.crimson7,
+  'tertiary-08': crimson.crimson8,
+  'tertiary-09': crimson.crimson9,
+  'tertiary-10': crimson.crimson10,
+  'tertiary-11': crimson.crimson11,
+  'tertiary-12': crimson.crimson12,
+
   'text-contrast-high': mauve.mauve12,
   'text-contrast-low': mauve.mauve11,
   'text-black': blackA.blackA12,
   'text-white': whiteA.whiteA12,
+
+  'transparent-background': blackA.blackA7,
 
   ...base
 };
@@ -99,10 +116,25 @@ const darkPalette = {
   'secondary-11': cyanDark.cyan11,
   'secondary-12': cyanDark.cyan12,
 
+  'tertiary-01': crimsonDark.crimson1,
+  'tertiary-02': crimsonDark.crimson2,
+  'tertiary-03': crimsonDark.crimson3,
+  'tertiary-04': crimsonDark.crimson4,
+  'tertiary-05': crimsonDark.crimson5,
+  'tertiary-06': crimsonDark.crimson6,
+  'tertiary-07': crimsonDark.crimson7,
+  'tertiary-08': crimsonDark.crimson8,
+  'tertiary-09': crimsonDark.crimson9,
+  'tertiary-10': crimsonDark.crimson10,
+  'tertiary-11': crimsonDark.crimson11,
+  'tertiary-12': crimsonDark.crimson12,
+
   'text-contrast-high': mauveDark.mauve12,
   'text-contrast-low': mauveDark.mauve11,
   'text-black': blackA.blackA12,
   'text-white': whiteA.whiteA12,
+
+  'transparent-background': whiteA.whiteA7,
 
   ...base
 };

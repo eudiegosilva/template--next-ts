@@ -1,4 +1,3 @@
-import { Container as ContainerComponent } from 'components/container/container.styles';
 import { styled } from 'styles/stitches.config';
 
 export const Container = styled('div', {
@@ -13,6 +12,7 @@ export const Wrapper = styled('main', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
+  flexDirection: 'column',
   overflow: 'hidden'
 });
 

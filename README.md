@@ -1,4 +1,4 @@
-# Template –– NextJS, TypeScript, Stitches, Radix and Storybook
+# Awesome Stitches Template — NextJS, TypeScript, Stitches, Radix and Storybook
 
 <img src="./public/assets/images/stitches-template-cover.png" />
 
@@ -49,12 +49,6 @@ yarn build
 // preview project
 yarn start
 ```
-
-```jsx
-// run storybook on http://localhost:6006/
-yarn storybook
-```
-
 ```jsx
 // runs the linter in all src/ files
 yarn lint
@@ -65,7 +59,13 @@ yarn lint
 yarn generate button
 ```
 
-_Learn how to install `yarn` through the [official documentation](https://yarnpkg.com/pt-BR/docs/install)._
+```jsx
+// run storybook on http://localhost:6006/
+yarn storybook
+```
+<img src="./public/assets/images/storybook.png" />
+
+_Learn how to install `yarn` through the [official documentation](https://yarnpkg.com/)._
 
 ---
 

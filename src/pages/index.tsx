@@ -1,5 +1,5 @@
-import { HomeTemplate } from 'templates';
+import { HomeLayout } from 'layouts';
 
 export default function Home() {
-  return <HomeTemplate />;
+  return <HomeLayout />;
 }

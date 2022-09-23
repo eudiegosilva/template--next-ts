@@ -2,9 +2,9 @@ import Head from 'next/head';
 
 import { Sphere, Header } from 'components';
 
-import * as s from './home.template.styles';
+import * as s from './home.layout.styles';
 
-const HomeTemplate = () => {
+const HomeLayout = () => {
   return (
     <s.Container>
       <Head>
@@ -35,4 +35,4 @@ const HomeTemplate = () => {
   );
 };
 
-export default HomeTemplate;
+export { HomeLayout };

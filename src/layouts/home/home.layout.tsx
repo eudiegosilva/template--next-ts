@@ -21,7 +21,7 @@ const HomeLayout = () => {
             projects.
           </s.Title>
           <s.Description>
-            Made with NextJS, TypeScript, Stitches and Radix.
+            Made with NextJS, TypeScript, Stitches and Design Tokens.
           </s.Description>
         </s.Section>
         <Sphere size={320} top={120} left={-120} color="$secondary-03" />

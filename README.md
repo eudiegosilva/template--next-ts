@@ -1,4 +1,4 @@
-# Awesome Stitches Template — NextJS, TypeScript, Stitches, Radix and Storybook
+# Awesome Stitches Template — NextJS, TypeScript, Stitches and Design Tokens
 
 <img src="./public/assets/images/stitches-template-cover.png" />
 
@@ -71,8 +71,22 @@ _Learn how to install `yarn` through the [official documentation](https://yarnpk
 
 ## Main technologies used
 
-### [radix](https://www.radix-ui.com/)
-> Unstyled, accessible components for building high‑quality design systems and web apps in React.
+- [x] NextJS
+- [x] TypeScript
+- [x] Stitches
+- [x] Radix UI Colors
+- [x] Storybook
+- [x] ESLint
+- [x] Prettier
+- [x] Husky
+- [x] Commitlint
+- [x] Lint-staged
+- [x] Light / Dark theme
+- [x] Automated component creation
+
+
+### [radix colors](https://www.radix-ui.com/colors)
+> An open-source color system for designing beautiful, accessible websites and apps.
 
 ### [stitches](https://stitches.dev/)
 > CSS-in-JS with near-zero runtime, SSR, multi-variant support, and a best-in-class developer experience.
@@ -92,7 +106,6 @@ I'm Diego Silva, Senior Frontend Developer at [Neon Bank](https://neon.com.br/) 
 ---
 
 #### #followMyWork
-
 
 [![twitter](https://img.shields.io/badge/twitter-@diegosilvatech-00acee?style=for-the-badge&logo=twitter)](https://twitter.com/diegosilvatech)
 [![linkedin](https://img.shields.io/badge/linkedin-@diegosilvatech-0e76a8?style=for-the-badge&logo=linkedin&logoColor=%230e76a8)](https://linkedin.com/in/diegosilvatech)

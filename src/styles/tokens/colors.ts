@@ -1,12 +1,14 @@
 import {
   violet,
-  cyan,
-  crimson,
+  teal,
+  blue,
   mauve,
   violetDark,
-  cyanDark,
-  crimsonDark,
+  tealDark,
+  blueDark,
   mauveDark,
+  pink,
+  pinkDark,
   blackA,
   whiteA
 } from '@radix-ui/colors';
@@ -15,6 +17,7 @@ export type ColorCategoryTypes =
   | 'primary'
   | 'secondary'
   | 'tertiary'
+  | 'quaternary'
   | 'natural';
 
 export type PaletteTypes = {
@@ -28,14 +31,16 @@ import { ThemeTypes } from 'styles/stitches.config';
 const themes: { [key in ThemeTypes]: PaletteTypes } = {
   light: {
     primary: violet,
-    secondary: cyan,
-    tertiary: crimson,
+    secondary: teal,
+    tertiary: blue,
+    quaternary: pink,
     natural: mauve
   },
   dark: {
     primary: violetDark,
-    secondary: cyanDark,
-    tertiary: crimsonDark,
+    secondary: tealDark,
+    tertiary: blueDark,
+    quaternary: pinkDark,
     natural: mauveDark
   }
 };
@@ -94,33 +99,48 @@ const makePalette = (theme: ThemeTypes) => {
   };
 
   const secondary = {
-    'secondary-01': palette.secondary.cyan1,
-    'secondary-02': palette.secondary.cyan2,
-    'secondary-03': palette.secondary.cyan3,
-    'secondary-04': palette.secondary.cyan4,
-    'secondary-05': palette.secondary.cyan5,
-    'secondary-06': palette.secondary.cyan6,
-    'secondary-07': palette.secondary.cyan7,
-    'secondary-08': palette.secondary.cyan8,
-    'secondary-09': palette.secondary.cyan9,
-    'secondary-10': palette.secondary.cyan10,
-    'secondary-11': palette.secondary.cyan11,
-    'secondary-12': palette.secondary.cyan12
+    'secondary-01': palette.secondary.teal1,
+    'secondary-02': palette.secondary.teal2,
+    'secondary-03': palette.secondary.teal3,
+    'secondary-04': palette.secondary.teal4,
+    'secondary-05': palette.secondary.teal5,
+    'secondary-06': palette.secondary.teal6,
+    'secondary-07': palette.secondary.teal7,
+    'secondary-08': palette.secondary.teal8,
+    'secondary-09': palette.secondary.teal9,
+    'secondary-10': palette.secondary.teal10,
+    'secondary-11': palette.secondary.teal11,
+    'secondary-12': palette.secondary.teal12
   };
 
   const tertiary = {
-    'tertiary-01': palette.tertiary.crimson1,
-    'tertiary-02': palette.tertiary.crimson2,
-    'tertiary-03': palette.tertiary.crimson3,
-    'tertiary-04': palette.tertiary.crimson4,
-    'tertiary-05': palette.tertiary.crimson5,
-    'tertiary-06': palette.tertiary.crimson6,
-    'tertiary-07': palette.tertiary.crimson7,
-    'tertiary-08': palette.tertiary.crimson8,
-    'tertiary-09': palette.tertiary.crimson9,
-    'tertiary-10': palette.tertiary.crimson10,
-    'tertiary-11': palette.tertiary.crimson11,
-    'tertiary-12': palette.tertiary.crimson12
+    'tertiary-01': palette.tertiary.blue1,
+    'tertiary-02': palette.tertiary.blue2,
+    'tertiary-03': palette.tertiary.blue3,
+    'tertiary-04': palette.tertiary.blue4,
+    'tertiary-05': palette.tertiary.blue5,
+    'tertiary-06': palette.tertiary.blue6,
+    'tertiary-07': palette.tertiary.blue7,
+    'tertiary-08': palette.tertiary.blue8,
+    'tertiary-09': palette.tertiary.blue9,
+    'tertiary-10': palette.tertiary.blue10,
+    'tertiary-11': palette.tertiary.blue11,
+    'tertiary-12': palette.tertiary.blue12
+  };
+
+  const quaternary = {
+    'quaternary-01': palette.quaternary.pink1,
+    'quaternary-02': palette.quaternary.pink2,
+    'quaternary-03': palette.quaternary.pink3,
+    'quaternary-04': palette.quaternary.pink4,
+    'quaternary-05': palette.quaternary.pink5,
+    'quaternary-06': palette.quaternary.pink6,
+    'quaternary-07': palette.quaternary.pink7,
+    'quaternary-08': palette.quaternary.pink8,
+    'quaternary-09': palette.quaternary.pink9,
+    'quaternary-10': palette.quaternary.pink10,
+    'quaternary-11': palette.quaternary.pink11,
+    'quaternary-12': palette.quaternary.pink12
   };
 
   return {
@@ -128,6 +148,7 @@ const makePalette = (theme: ThemeTypes) => {
     ...primary,
     ...secondary,
     ...tertiary,
+    ...quaternary,
     ...text
   };
 };

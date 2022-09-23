@@ -8,7 +8,7 @@ const HomeTemplate = () => {
   return (
     <s.Container>
       <Head>
-        <title>@diegosilvatech––template–nextjs</title>
+        <title>Stitches Template — NextJS + TypeScript</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <s.Wrapper>
@@ -21,7 +21,7 @@ const HomeTemplate = () => {
             <s.Strong css={{ color: '$secondary-11' }}>Radix</s.Strong>
           </s.Title>
           <s.Description>
-            See all documentation for a better experience.
+            See all README.md file for a better experience.
           </s.Description>
         </s.Section>
         <Sphere size={320} top={120} left={-120} color="$secondary-03" />

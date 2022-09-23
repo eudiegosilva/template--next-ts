@@ -7,7 +7,7 @@ const story: Meta<HeaderProps> = {
   component: Header,
   args: {},
   argTypes: {},
-  parameters: {}
+  parameters: { controls: { disable: true } }
 };
 
 export const HeaderExample: Story<HeaderProps> = args => <Header {...args} />;

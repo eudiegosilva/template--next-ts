@@ -1,6 +1,6 @@
 # Template –– NextJS, TypeScript, Stitches, Radix and Storybook
 
-<img src="./public/assets/covers/cover.png" />
+<img src="./public/assets/images/covers/cover.png" />
 
 [![made by @diegosilvatech](https://img.shields.io/badge/made%20by-Diego%20Silva-11c76f?style=for-the-badge)](https://linktr.ee/diegosilvatech)
 [![twitter](https://img.shields.io/badge/twitter-@diegosilvatech-00acee?style=for-the-badge&logo=twitter)](https://twitter.com/diegosilvatech)

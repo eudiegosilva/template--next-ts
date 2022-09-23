@@ -1,14 +1,15 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
+import stitchesLogo from '../../../public/assets/images/logos/stitches-logo.png';
 import { Avatar, AvatarProps } from './Avatar';
 
 const story: Meta<AvatarProps> = {
   title: 'Atoms/Avatar',
   component: Avatar,
   args: {
-    src: 'https://avatars.githubusercontent.com/u/38539443?v=4',
-    alt: '@diegosilvatech image',
-    fallbackContent: 'DS',
+    src: stitchesLogo.src,
+    alt: 'Stitches Logo',
+    fallbackContent: 'ST',
     fallbackDelay: 600
   },
   argTypes: {

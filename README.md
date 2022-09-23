@@ -1,13 +1,20 @@
 # Template –– NextJS, TypeScript, Stitches, Radix and Storybook
 
-<img src="./public/assets/images/covers/cover.png" />
-
-[![made by @diegosilvatech](https://img.shields.io/badge/made%20by-Diego%20Silva-11c76f?style=for-the-badge)](https://linktr.ee/diegosilvatech)
-[![twitter](https://img.shields.io/badge/twitter-@diegosilvatech-00acee?style=for-the-badge&logo=twitter)](https://twitter.com/diegosilvatech)
-[![linkedin](https://img.shields.io/badge/linkedin-@diegosilvatech-0e76a8?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/diegosilvatech)
+<img src="./public/assets/images/stitches-template-cover.png" />
 
 ---
+## Summary
 
+  - [About this template](#about-this-template)
+  - [Avaliale scripts](#avaliale-scripts)
+    - [Other scripts available](#other-scripts-available)
+  - [Main technologies used](#main-technologies-used)
+    - [radix](#radix)
+    - [stitches](#stitches)
+    - [storybook](#storybook)
+    - [typescript](#typescript)
+  - [About me](#about-me)
+      - [#followMyWork](#followmywork)
 
 ## About this template
 
@@ -53,11 +60,16 @@ yarn storybook
 yarn lint
 ```
 
+```jsx
+// generate components quickly. e.g. to generate a <Button /> component, run:
+yarn generate button
+```
+
 _Learn how to install `yarn` through the [official documentation](https://yarnpkg.com/pt-BR/docs/install)._
 
 ---
 
-## MAIN TECHNOLOGIES USED
+## Main technologies used
 
 ### [radix](https://www.radix-ui.com/)
 > Unstyled, accessible components for building high‑quality design systems and web apps in React.
@@ -69,17 +81,17 @@ _Learn how to install `yarn` through the [official documentation](https://yarnpk
 > Storybook is a frontend workshop for building UI components and pages in isolation.
 
 ### [typescript](https://www.typescriptlang.org/)
-> To give more power to my JavaScript code.
+> TypeScript is JavaScript with syntax for types.
 
 ---
 
-## ABOUT ME
+## About me
 
-I'm Diego Silva, Frontend Developer and Community Manager at [@99juniors](https://github.com/99juniors).
+I'm Diego Silva, Senior Frontend Developer at [Neon Bank](https://neon.com.br/) with focus on improving the Developer Experience and Community Manager at [@99juniors](https://github.com/99juniors).
 
 ---
 
-### #followMyWork
+#### #followMyWork
 
 
 [![twitter](https://img.shields.io/badge/twitter-@diegosilvatech-00acee?style=for-the-badge&logo=twitter)](https://twitter.com/diegosilvatech)

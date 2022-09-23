@@ -1,10 +1,11 @@
 /* PLOP_INJECT_COMPONENT_EXPORT */
-export { Toggle } from './toggle/Toggle';
-export { Header } from './header/Header';
-export { Sphere } from './sphere/Sphere';
-export { Flex } from './flex/Flex';
-export { Box } from './box/Box';
 export { Avatar } from './avatar/Avatar';
-export { Container } from './container/Container';
+export { Box } from './box/Box';
 export { Button } from './button/Button';
+export { Container } from './container/Container';
+export { Flex } from './flex/Flex';
+export { Header } from './header/Header';
 export { Icon } from './icon/Icon';
+export { Logo } from './logo/Logo';
+export { Sphere } from './sphere/Sphere';
+export { Toggle } from './toggle/Toggle';

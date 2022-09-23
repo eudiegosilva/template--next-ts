@@ -12,5 +12,6 @@ export const Header = styled('header', {
 
 export const HeaderContainer = styled(Container, {
   display: 'flex',
-  justifyContent: 'flex-end'
+  alignItems: 'center',
+  justifyContent: 'space-between'
 });

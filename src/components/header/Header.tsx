@@ -2,7 +2,7 @@ import { useTheme } from 'next-themes';
 import { useState } from 'react';
 
 import { SunIcon, MoonIcon } from '@radix-ui/react-icons';
-import { Toggle } from 'components';
+import { Toggle, Logo } from 'components';
 
 import * as s from './header.styles';
 
@@ -22,6 +22,7 @@ const Header = () => {
   return (
     <s.Header>
       <s.HeaderContainer>
+        <Logo size={35} />
         <Toggle onClick={toggleTheme}>
           <ThemeIcon />
         </Toggle>

@@ -1,9 +1,9 @@
 import { styled } from 'styles/stitches.config';
 
 export const ButtonWrapper = styled('button', {
-  fontFamily: '$body',
-  fontSize: '$md',
-  fontWeight: '$500',
+  fontFamily: '$font-family-body',
+  fontSize: '$font-size-04',
+  fontWeight: '$font-weight-500',
   border: '1px solid',
   borderRadius: '$border-radius-01',
   padding: '$space-02 $space-04',

@@ -7,7 +7,7 @@ export const globalStyles = globalCss({
     boxSizing: 'border-box'
   },
   'html, body': {
-    fontFamily: '$body',
+    fontFamily: '$font-family-body',
     WebkitFontSmoothing: 'antialiased',
     '&::-webkit-scrollbar': {
       backgroundColor: 'transparent',

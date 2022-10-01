@@ -17,23 +17,23 @@ export const Section = styled('section', {
 });
 
 export const Title = styled('h1', {
-  fontFamily: '$heading',
-  fontSize: '$space-08',
-  lineHeight: '$133',
+  fontFamily: '$font-family-heading',
+  fontSize: '$font-size-10',
+  lineHeight: '$115',
   color: '$text-contrast-high',
-  fontWeight: '$900'
+  fontWeight: '$font-weight-900'
 });
 
 export const Strong = styled('strong', {
-  fontWeight: '$900'
+  fontWeight: '$font-weight-900'
 });
 
 export const Description = styled('p', {
-  fontFamily: '$body',
-  fontSize: '$lg',
+  fontFamily: '$font-family-body',
+  fontSize: '$font-size-06',
   lineHeight: '$120',
   color: '$text-contrast-low',
-  fontWeight: '$400',
+  fontWeight: '$font-weight-400',
   marginBottom: '$space-07'
 });
 

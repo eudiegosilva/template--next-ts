@@ -30,7 +30,7 @@ export const Fallback = styled(RadixAvatar.Fallback, {
   justifyContent: 'center',
   backgroundColor: '$primary-03',
   color: '$primary-11',
-  fontSize: '$sm',
+  fontSize: '$font-size-03',
   lineHeight: '$100',
-  fontWeight: '$500'
+  fontWeight: '$font-weight-500'
 });

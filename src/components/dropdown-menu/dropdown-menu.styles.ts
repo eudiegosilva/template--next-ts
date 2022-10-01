@@ -45,7 +45,7 @@ const contentStyles: StichesConfigProps = {
 
 const itemStyles: StichesConfigProps = {
   all: 'unset',
-  fontSize: '$sm',
+  fontSize: '$font-size-03',
   lineHeight: '$100',
   color: '$primary-09',
   borderRadius: '$border-radius-01',
@@ -106,7 +106,7 @@ export const RadioItem = styled(RadixDropdownMenu.RadioItem, {
 
 export const Label = styled(RadixDropdownMenu.Label, {
   paddingLeft: '$space-06',
-  fontSize: '$ss',
+  fontSize: '$font-size-01',
   lineHeight: '$200',
   textTransform: 'uppercase',
   color: '$natural-11',

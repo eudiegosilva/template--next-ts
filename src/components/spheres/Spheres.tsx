@@ -1,6 +1,6 @@
 import * as s from './spheres.styles';
 
-export type SpheresProps = any;
+export type SpheresProps = {};
 
 const Spheres = () => <s.Wrapper />;
 

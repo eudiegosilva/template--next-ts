@@ -1,14 +1,17 @@
 export {
+  /* PLOP_INJECT_COMPONENT_TYPES */
   type AvatarProps,
   type BoxProps,
-  type ButtonProps,
   type ButtonKbdProps,
+  type ButtonProps,
   type ContainerProps,
+  type DropdownMenuProps,
   type FlexProps,
   type HeaderProps,
   type LogoProps,
-  type ToggleProps,
-  type PageLayoutProps
+  type PageLayoutProps,
+  type SpheresProps,
+  type ToggleProps
 } from 'components';
 
 export {

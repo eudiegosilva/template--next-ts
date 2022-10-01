@@ -34,7 +34,13 @@ module.exports = plop => {
         type: 'append',
         path: '../src/components/index.ts',
         pattern: `/* PLOP_INJECT_COMPONENT_EXPORT */`,
-        template: `export { {{pascalCase name}} } from './{{kebabCase name}}/{{pascalCase name}}';`
+        template: `export { {{pascalCase name}}, type {{pascalCase name}}Props } from './{{kebabCase name}}/{{pascalCase name}}';`
+      },
+      {
+        type: 'append',
+        path: '../src/types/index.ts',
+        pattern: `/* PLOP_INJECT_COMPONENT_TYPES */`,
+        template: `  type {{pascalCase name}}Props,`
       }
     ]
   });

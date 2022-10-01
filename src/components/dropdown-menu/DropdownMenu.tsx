@@ -10,7 +10,7 @@ import {
 
 import * as s from './dropdown-menu.styles';
 
-export type DropdownMenuProps = any;
+export type DropdownMenuProps = {};
 
 export type ContentProps = {
   children: React.ReactNode;

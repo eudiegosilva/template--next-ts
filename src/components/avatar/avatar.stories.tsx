@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import stitchesLogo from '../../../public/assets/images/template-logo.png';
+import stitchesLogo from '../../../public/assets/images/avatar.png';
 import { Avatar, AvatarProps } from './Avatar';
 
 const story: Meta<AvatarProps> = {

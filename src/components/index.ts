@@ -3,10 +3,6 @@ export { Avatar, type AvatarProps } from './avatar/Avatar';
 export { Button, type ButtonProps } from './button/Button';
 export { ButtonKbd, type ButtonKbdProps } from './button-kbd/ButtonKbd';
 export { Container, type ContainerProps } from './container/Container';
-export {
-  DropdownMenu,
-  type DropdownMenuProps
-} from './dropdown-menu/DropdownMenu';
 export { Header, type HeaderProps } from './header/Header';
 export { Logo, type LogoProps } from './logo/Logo';
 export { PageLayout, type PageLayoutProps } from './page-layout/PageLayout';

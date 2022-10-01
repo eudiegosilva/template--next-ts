@@ -4,7 +4,6 @@ export {
   type ButtonKbdProps,
   type ButtonProps,
   type ContainerProps,
-  type DropdownMenuProps,
   type HeaderProps,
   type LogoProps,
   type PageLayoutProps,

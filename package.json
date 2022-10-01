@@ -63,5 +63,23 @@
     "storybook-addon-next": "^1.6.7",
     "storybook-addon-pseudo-states": "^1.15.1",
     "typescript": "^4.7.4"
-  }
+  },
+  "keywords": [
+		"starter template",
+		"starter template stitches react",
+		"nextjs template",
+		"nextjs stitches",
+		"nextjs",
+		"nextjs typescript",
+		"react",
+		"typescript",
+		"typescript stitches",
+		"typescript radix",
+		"typescript nextjs",
+		"typescript react",
+		"boilerplate",
+		"boilerplate nextjs",
+		"boilerplate stitches",
+		"boilerplate react"
+	]
 }

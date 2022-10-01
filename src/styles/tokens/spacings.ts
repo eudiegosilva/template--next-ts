@@ -1,4 +1,5 @@
 const spacings = {
+  ss: '0.125rem', // 2px
   xs: '0.25rem', // 4px
   sm: '0.5rem', // 8px
   md: '0.75rem', // 12px

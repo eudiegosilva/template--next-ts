@@ -1,12 +1,13 @@
+import { ColorTokensTypes } from 'types';
+
 import * as s from './logo.styles';
-import { ColorTokensTypes } from 'styles/stitches.config';
 
 export type LogoProps = {
   color?: ColorTokensTypes;
   size?: number;
 };
 
-const Logo = ({ color, size }: LogoProps) => (
+const Logo = ({ color = '$text-contrast-high', size }: LogoProps) => (
   <s.Wrapper css={{ width: size, color }}>
     <svg
       width={size}

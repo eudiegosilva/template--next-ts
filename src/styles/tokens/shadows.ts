@@ -2,12 +2,16 @@ import { colors } from './colors';
 
 const shadows = {
   dark: {
-    normal: `0 2px 10px ${colors.dark['primary-03']}`,
-    focus: `0 0 0 2px ${colors.dark['primary-09']}`
+    'button-normal': `0 0 0 2px ${colors.dark['primary-07']}`,
+    'button-focus': `0 0 0 2px ${colors.dark['primary-09']}`,
+    'input-normal': `0 0 0 1px ${colors.dark['primary-07']}`,
+    'input-focus': `0 0 0 1px ${colors.dark['primary-08']}`
   },
   light: {
-    normal: `0 2px 10px ${colors.light['primary-03']}`,
-    focus: `0 0 0 2px ${colors.light['primary-09']}`
+    'button-normal': `0 0 0 2px ${colors.light['primary-07']}`,
+    'button-focus': `0 0 0 2px ${colors.light['primary-09']}`,
+    'input-normal': `0 0 0 2px ${colors.light['primary-07']}`,
+    'input-focus': `0 0 0 2px ${colors.light['primary-08']}`
   }
 };
 

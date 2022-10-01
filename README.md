@@ -1,6 +1,6 @@
-# Awesome Stitches Template — NextJS, TypeScript, Stitches and Design Tokens
+# Template NextTS — TypeScript, Stitches, Radix and Design Tokens
 
-<img src="./public/assets/images/stitches-template-cover.png" />
+<img src="./public/assets/images/template-cover.png" />
 
 ---
 ## Summary

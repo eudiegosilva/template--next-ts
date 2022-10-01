@@ -14,9 +14,10 @@ export const Toggle = styled(RadixToggle.Root, {
   lineHeight: '$100',
   alignItems: 'center',
   justifyContent: 'center',
+  boxShadow: '$button-normal',
   '&:hover': { backgroundColor: '$primary-03' },
   '&[data-state=on]': {
     color: '$text-contrast-high'
   },
-  '&:focus': { boxShadow: '$focus' }
+  '&:focus': { boxShadow: '$button-focus' }
 });

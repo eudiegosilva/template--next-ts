@@ -1,7 +1,7 @@
 const families = {
   heading: 'Epilogue, sans-serif',
   body: 'Epilogue, sans-serif',
-  code: 'Epilogue, sans-serif'
+  code: 'Fira Code, monospace'
 };
 
 const sizes = {
@@ -32,8 +32,9 @@ const weights = {
 };
 
 const letterSpacings = {
-  heading: '-0.01rem',
-  body: '0.05rem'
+  'heading-small': '-0.01rem',
+  'body-small': '0.05rem',
+  'body-medium': '0.10rem'
 };
 
 const lineHeights = {

@@ -6,7 +6,7 @@ const story: Meta<LogoProps> = {
   title: 'Atoms/Logo',
   component: Logo,
   args: {
-    size: 24,
+    size: 32,
     color: '$primary-09'
   },
   argTypes: {

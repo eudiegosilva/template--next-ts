@@ -6,6 +6,7 @@ import { theme } from 'styles/stitches.config';
 
 export default function App({ Component, pageProps }: AppProps) {
   globalStyles();
+
   return (
     <ThemeProvider
       attribute="class"

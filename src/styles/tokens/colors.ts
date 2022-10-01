@@ -143,12 +143,28 @@ const makePalette = (theme: ThemeTypes) => {
     'quaternary-12': palette.quaternary.pink12
   };
 
+  const natural = {
+    'natural-01': palette.natural.mauve1,
+    'natural-02': palette.natural.mauve2,
+    'natural-03': palette.natural.mauve3,
+    'natural-04': palette.natural.mauve4,
+    'natural-05': palette.natural.mauve5,
+    'natural-06': palette.natural.mauve6,
+    'natural-07': palette.natural.mauve7,
+    'natural-08': palette.natural.mauve8,
+    'natural-09': palette.natural.mauve9,
+    'natural-10': palette.natural.mauve10,
+    'natural-11': palette.natural.mauve11,
+    'natural-12': palette.natural.mauve12
+  };
+
   return {
     ...base,
     ...primary,
     ...secondary,
     ...tertiary,
     ...quaternary,
+    ...natural,
     ...text
   };
 };

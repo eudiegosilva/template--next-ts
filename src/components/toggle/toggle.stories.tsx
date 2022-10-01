@@ -10,6 +10,7 @@ const story: Meta<ToggleProps> = {
     children: <SunIcon />
   },
   argTypes: {
+    children: { description: 'Toggle content' },
     onClick: {
       description: 'Event executed when the toggle is clicked',
       action: 'toggle-clicked'

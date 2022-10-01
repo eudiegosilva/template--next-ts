@@ -9,7 +9,7 @@ const story: Meta<AvatarProps> = {
   args: {
     src: stitchesLogo.src,
     alt: 'Stitches Logo',
-    fallbackContent: 'ST',
+    fallbackContent: 'TN',
     fallbackDelay: 600
   },
   argTypes: {

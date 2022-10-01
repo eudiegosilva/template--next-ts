@@ -4,17 +4,17 @@ const families = {
   'font-family-code': 'Fira Code, monospace'
 };
 
+// major third, base 16px
 const sizes = {
-  'font-size-01': '0.625rem', // 10px
-  'font-size-02': '0.75rem', // 12px
-  'font-size-03': '0.875rem', // 14px
-  'font-size-04': '1rem', // 16px
-  'font-size-05': '1.125rem', // 18px
-  'font-size-06': '1.25rem', // 20px
-  'font-size-07': '1.5rem', // 24px
-  'font-size-08': '1.75rem', // 28px
-  'font-size-09': '2.188rem', // 35px
-  'font-size-10': '3.75rem' // 60px
+  'font-size-01': '0.64rem', // 10.24px
+  'font-size-02': '0.8rem', // 12.80px
+  'font-size-03': '1rem', // 16.00px
+  'font-size-04': '1.25rem', // 20.00px
+  'font-size-05': '1.563rem', // 25.00px
+  'font-size-06': '1.953rem', // 31.25px
+  'font-size-07': '2.441rem', // 39.06px
+  'font-size-08': '3.052rem', // 48.83px
+  'font-size-09': '3.815rem' // 61.04px
 };
 
 const weights = {

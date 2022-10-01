@@ -18,7 +18,7 @@ export const Section = styled('section', {
 
 export const Title = styled('h1', {
   fontFamily: '$heading',
-  fontSize: '$3x',
+  fontSize: '$space-08',
   lineHeight: '$133',
   color: '$text-contrast-high',
   fontWeight: '$900'
@@ -34,10 +34,10 @@ export const Description = styled('p', {
   lineHeight: '$120',
   color: '$text-contrast-low',
   fontWeight: '$400',
-  marginBottom: '$2x'
+  marginBottom: '$space-07'
 });
 
 export const CTAWrapper = styled('div', {
-  my: '$lg',
+  my: '$space-06',
   color: '$text-contrast-low'
 });

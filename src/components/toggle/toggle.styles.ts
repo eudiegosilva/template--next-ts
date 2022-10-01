@@ -8,7 +8,7 @@ export const Toggle = styled(RadixToggle.Root, {
   color: '$text-contrast-high',
   height: 35,
   width: 35,
-  borderRadius: '$xs',
+  borderRadius: '$border-radius-01',
   display: 'flex',
   fontSize: '$sm',
   lineHeight: '$100',

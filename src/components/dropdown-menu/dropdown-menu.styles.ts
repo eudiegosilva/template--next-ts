@@ -26,8 +26,8 @@ const contentStyles: StichesConfigProps = {
   minWidth: 220,
   backgroundColor: '$primary-01',
   border: '1px solid $primary-07',
-  borderRadius: '$sm',
-  padding: '$sm',
+  borderRadius: '$border-radius-02',
+  padding: '$space-02',
   boxShadow:
     '0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)',
   '@media (prefers-reduced-motion: no-preference)': {
@@ -48,13 +48,13 @@ const itemStyles: StichesConfigProps = {
   fontSize: '$sm',
   lineHeight: '$100',
   color: '$primary-09',
-  borderRadius: '$xs',
+  borderRadius: '$border-radius-01',
   display: 'flex',
   alignItems: 'center',
   height: 25,
   padding: '0 5px',
   position: 'relative',
-  paddingLeft: '$xx',
+  paddingLeft: '$space-06',
   userSelect: 'none',
 
   '&[data-disabled]': {
@@ -105,7 +105,7 @@ export const RadioItem = styled(RadixDropdownMenu.RadioItem, {
 });
 
 export const Label = styled(RadixDropdownMenu.Label, {
-  paddingLeft: '$xx',
+  paddingLeft: '$space-06',
   fontSize: '$ss',
   lineHeight: '$200',
   textTransform: 'uppercase',
@@ -116,7 +116,7 @@ export const Label = styled(RadixDropdownMenu.Label, {
 export const Separator = styled(RadixDropdownMenu.Separator, {
   height: 1,
   backgroundColor: '$primary-06',
-  margin: '$sm'
+  margin: '$space-02'
 });
 
 export const Sub = styled(RadixDropdownMenu.Sub, {});
@@ -136,7 +136,7 @@ export const SubContent = styled(RadixDropdownMenu.SubContent, {
 export const IconButton = styled('button', {
   all: 'unset',
   fontFamily: 'inherit',
-  borderRadius: '100%',
+  borderRadius: '$border-radius-circular',
   height: 35,
   width: 35,
   display: 'inline-flex',
@@ -156,7 +156,7 @@ export const Arrow = styled(RadixDropdownMenu.Arrow, {
 
 export const RightSlot = styled('div', {
   marginLeft: 'auto',
-  paddingLeft: '$xl',
+  paddingLeft: '$space-05',
   color: '$natural-11',
   '[data-highlighted] > &': { color: 'white' },
   '[data-disabled] &': { color: '$natural-11' }

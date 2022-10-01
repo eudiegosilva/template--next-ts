@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import { Container, ContainerProps } from './Container';
 
 const story: Meta<ContainerProps> = {
-  title: 'Helpers/Container',
+  title: '- Helpers/Container',
   component: Container,
   args: { children: 'Responsive content' },
   argTypes: { children: { description: 'Container content' } }

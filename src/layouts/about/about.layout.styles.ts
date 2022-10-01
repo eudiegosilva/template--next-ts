@@ -10,6 +10,6 @@ export const Wrapper = styled('main', {
 });
 
 export const CTAWrapper = styled('div', {
-  my: '$lg',
+  my: '$space-04',
   color: '$text-contrast-low'
 });

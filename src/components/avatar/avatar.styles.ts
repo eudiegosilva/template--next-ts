@@ -11,7 +11,7 @@ export const Avatar = styled(RadixAvatar.Root, {
   userSelect: 'none',
   width: 45,
   height: 45,
-  borderRadius: '100%',
+  borderRadius: '$border-radius-circular',
   backgroundColor: '$black-03'
 });
 

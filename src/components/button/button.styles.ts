@@ -5,8 +5,8 @@ export const ButtonWrapper = styled('button', {
   fontSize: '$md',
   fontWeight: '$500',
   border: '1px solid',
-  borderRadius: '$xs',
-  padding: '$sm $lg',
+  borderRadius: '$border-radius-01',
+  padding: '$space-02 $space-04',
 
   '&:hover': {
     cursor: 'pointer'

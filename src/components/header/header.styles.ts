@@ -39,7 +39,7 @@ export const LinkItem = styled('a', {
   fontSize: '$sm',
   fontWeight: '$400',
   letterSpacing: '$body-small',
-  padding: '$lg',
+  padding: '$space-04',
   textTransform: 'uppercase',
   '&:hover': {
     color: '$text-contrast-high',

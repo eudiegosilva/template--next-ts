@@ -3,9 +3,9 @@ import { styled } from 'styles/stitches.config';
 export const Container = styled('div', {
   width: '100%',
   mx: 'auto',
-  '@less-sm': { maxWidth: '$container-sm', px: '$sm' },
-  '@greater-sm': { maxWidth: '$container-md', px: '$md' },
-  '@greater-md': { maxWidth: '$container-lg', px: '$lg' },
-  '@greater-lg': { maxWidth: '$container-xl', px: '$xl' },
-  '@greater-xl': { minWidth: '$container-xl', px: '$xx' }
+  '@less-sm': { maxWidth: '$container-sm', px: '$space-02' },
+  '@greater-sm': { maxWidth: '$container-md', px: '$space-03' },
+  '@greater-md': { maxWidth: '$container-lg', px: '$space-04' },
+  '@greater-lg': { maxWidth: '$container-xl', px: '$space-05' },
+  '@greater-xl': { minWidth: '$container-xl', px: '$space-06' }
 });

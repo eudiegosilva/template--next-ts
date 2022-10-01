@@ -2,14 +2,9 @@ import { styled } from 'styles/stitches.config';
 
 export const Wrapper = styled('main', {
   height: '100vh',
-  zIndex: '$base',
+  zIndex: '$z-indice-base',
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'column',
   overflow: 'hidden'
-});
-
-export const CTAWrapper = styled('div', {
-  my: '$space-04',
-  color: '$text-contrast-low'
 });

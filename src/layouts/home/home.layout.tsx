@@ -10,7 +10,7 @@ const HomeLayout = () => {
           <s.Title>
             Template {''}
             <s.Strong css={{ color: '$primary-11' }}>Next</s.Strong>
-            <s.Strong css={{ color: '$quaternary-11' }}>TS</s.Strong>
+            <s.Strong css={{ color: '$secondary-11' }}>TS</s.Strong>
           </s.Title>
           <s.Description>
             Made with NextJS, TypeScript, Stitches and Radix.

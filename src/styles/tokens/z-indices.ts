@@ -1,11 +1,11 @@
 const zIndices = {
-  behind: -1,
-  root: 0,
-  base: 10,
-  menu: 20,
-  overlay: 30,
-  modal: 40,
-  'always-on-top': 50
+  'z-indice-behind': -1,
+  'z-indice-root': 0,
+  'z-indice-base': 10,
+  'z-indice-menu': 20,
+  'z-indice-overlay': 30,
+  'z-indice-modal': 40,
+  'z-indice-top': 50
 };
 
 export { zIndices };

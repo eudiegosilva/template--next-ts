@@ -31,6 +31,6 @@ export const Fallback = styled(RadixAvatar.Fallback, {
   backgroundColor: '$primary-03',
   color: '$primary-11',
   fontSize: '$font-size-03',
-  lineHeight: '$100',
+  lineHeight: '$font-line-height-100',
   fontWeight: '$font-weight-500'
 });

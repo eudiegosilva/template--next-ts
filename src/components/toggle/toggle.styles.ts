@@ -11,7 +11,7 @@ export const Toggle = styled(RadixToggle.Root, {
   borderRadius: '$border-radius-01',
   display: 'flex',
   fontSize: '$font-size-03',
-  lineHeight: '$100',
+  lineHeight: '$font-line-height-100',
   alignItems: 'center',
   justifyContent: 'center',
   boxShadow: '$button-normal',

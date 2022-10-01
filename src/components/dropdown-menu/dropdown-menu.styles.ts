@@ -46,7 +46,7 @@ const contentStyles: StichesConfigProps = {
 const itemStyles: StichesConfigProps = {
   all: 'unset',
   fontSize: '$font-size-03',
-  lineHeight: '$100',
+  lineHeight: '$font-line-height-100',
   color: '$primary-09',
   borderRadius: '$border-radius-01',
   display: 'flex',
@@ -107,10 +107,10 @@ export const RadioItem = styled(RadixDropdownMenu.RadioItem, {
 export const Label = styled(RadixDropdownMenu.Label, {
   paddingLeft: '$space-06',
   fontSize: '$font-size-01',
-  lineHeight: '$200',
+  lineHeight: '$font-line-height-200',
   textTransform: 'uppercase',
   color: '$natural-11',
-  letterSpacing: '$body-medium'
+  letterSpacing: '$font-letter-spacing-body'
 });
 
 export const Separator = styled(RadixDropdownMenu.Separator, {

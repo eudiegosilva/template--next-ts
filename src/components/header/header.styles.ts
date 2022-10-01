@@ -35,10 +35,10 @@ export const LinkItem = styled('a', {
   textDecoration: 'none',
   color: '$text-contrast-low',
   fontFamily: '$font-family-body',
-  transition: '$fast',
+  transition: '$transition-fast',
   fontSize: '$font-size-03',
   fontWeight: '$font-weight-400',
-  letterSpacing: '$body-small',
+  letterSpacing: '$font-letter-spacing-body',
   padding: '$space-04',
   textTransform: 'uppercase',
   '&:hover': {

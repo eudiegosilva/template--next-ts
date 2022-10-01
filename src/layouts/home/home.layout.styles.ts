@@ -2,11 +2,13 @@ import { styled } from 'styles/stitches.config';
 
 export const Wrapper = styled('main', {
   height: '100vh',
-  zIndex: '$base',
+  zIndex: '$z-indice-base',
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'column',
-  overflow: 'hidden'
+  overflow: 'hidden',
+  alignItems: 'center',
+  textAlign: 'center'
 });
 
 export const Section = styled('section', {
@@ -18,26 +20,36 @@ export const Section = styled('section', {
 
 export const Title = styled('h1', {
   fontFamily: '$font-family-heading',
-  fontSize: '$font-size-10',
-  lineHeight: '$115',
+  fontSize: '$font-size-09',
+  lineHeight: '$font-line-height-115',
   color: '$text-contrast-high',
-  fontWeight: '$font-weight-900'
+  fontWeight: '$font-weight-900',
+  '&::selection': {
+    backgroundColor: '$primary-09',
+    color: '$text-white'
+  },
+  '@greater-md': { fontSize: '$font-size-10' }
 });
 
 export const Strong = styled('strong', {
-  fontWeight: '$font-weight-900'
+  fontWeight: '$font-weight-900',
+  '&::selection': {
+    backgroundColor: '$primary-09',
+    color: '$text-white'
+  }
 });
 
 export const Description = styled('p', {
   fontFamily: '$font-family-body',
-  fontSize: '$font-size-06',
-  lineHeight: '$120',
+  fontSize: '$font-size-05',
+  lineHeight: '$font-line-height-115',
   color: '$text-contrast-low',
   fontWeight: '$font-weight-400',
-  marginBottom: '$space-07'
-});
+  marginBottom: '$space-07',
+  '&::selection': {
+    backgroundColor: '$secondary-09',
+    color: '$text-white'
+  },
 
-export const CTAWrapper = styled('div', {
-  my: '$space-06',
-  color: '$text-contrast-low'
+  '@greater-md': { fontSize: '$font-size-06' }
 });

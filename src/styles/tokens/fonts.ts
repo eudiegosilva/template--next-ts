@@ -30,19 +30,18 @@ const weights = {
 };
 
 const letterSpacings = {
-  'heading-small': '-0.01rem',
-  'body-small': '0.05rem',
-  'body-medium': '0.10rem'
+  'font-letter-spacing-heading': '-0.01rem',
+  'font-letter-spacing-body': '0.1rem'
 };
 
 const lineHeights = {
-  100: '100%',
-  115: '115%',
-  120: '120%',
-  133: '133%',
-  150: '150%',
-  170: '170%',
-  200: '200%'
+  'font-line-height-100': '100%',
+  'font-line-height-115': '115%',
+  'font-line-height-120': '120%',
+  'font-line-height-133': '133%',
+  'font-line-height-150': '150%',
+  'font-line-height-170': '170%',
+  'font-line-height-200': '200%'
 };
 
 export const fonts = { families, sizes, weights, letterSpacings, lineHeights };

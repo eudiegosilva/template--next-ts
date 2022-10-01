@@ -43,7 +43,7 @@ const Header = () => {
     <s.Header>
       <s.HeaderContainer>
         <s.LogoWrapper onClick={() => router.push('/')}>
-          <Logo size={35} />
+          <Logo size={35} color="$primary-09" />
         </s.LogoWrapper>
         <s.List>
           {pages.map(page => (

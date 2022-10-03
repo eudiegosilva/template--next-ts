@@ -28,7 +28,7 @@ const Header = () => {
   const ThemeIcon = () => (theme === 'light' ? <MoonIcon /> : <SunIcon />);
 
   const LinkItem = ({ page }: LinkItemProps) => {
-    const path = `/${page.toLocaleLowerCase()}`;
+    const path = page !== 'Home' ? `/${page.toLocaleLowerCase()}` : '/';
     const variant = router.pathname === path ? 'active' : 'inactive';
     return (
       <s.ListItem key={page}>

@@ -1,6 +1,8 @@
 import { ThemeProvider } from 'next-themes';
 import type { AppProps } from 'next/app';
 
+import { AuthProvider } from 'contexts';
+
 import { globalStyles } from 'styles';
 import { theme } from 'styles/stitches.config';
 
@@ -16,7 +18,9 @@ export default function App({ Component, pageProps }: AppProps) {
         light: theme.light.className
       }}
     >
-      <Component {...pageProps} />
+      <AuthProvider>
+        <Component {...pageProps} />
+      </AuthProvider>
     </ThemeProvider>
   );
 }

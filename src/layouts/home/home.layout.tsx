@@ -4,7 +4,7 @@ import * as s from './home.layout.styles';
 
 const HomeLayout = () => {
   return (
-    <PageLayout title="Template NextTS">
+    <PageLayout title="Template NextTS" showHeader>
       <s.Wrapper>
         <s.Section>
           <s.Title>

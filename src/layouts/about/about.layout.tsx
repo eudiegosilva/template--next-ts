@@ -4,7 +4,7 @@ import * as s from './about.layout.styles';
 
 const AboutLayout = () => {
   return (
-    <PageLayout title="About — Template NextTS">
+    <PageLayout title="About — Template NextTS" showHeader>
       <s.Wrapper>
         <h1>About</h1>
       </s.Wrapper>

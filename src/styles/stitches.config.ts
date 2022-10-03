@@ -16,6 +16,7 @@ import {
 
 export type StichesConfigProps = Stitches.CSS<typeof config>;
 export type ColorTokensTypes = `$${keyof typeof colors.dark}`;
+export type SpacingTokensTypes = `$${keyof typeof spacings}`;
 export type ThemeTypes = 'dark' | 'light';
 export type CreateThemeProps = ReturnType<typeof createTheme>;
 

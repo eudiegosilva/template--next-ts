@@ -1,5 +1,8 @@
 export {
   /* PLOP_INJECT_COMPONENT_TYPES */
+  type SeparatorProps,
+  type FormLoginProps,
+  type FormLoginDataProps,
   type InputTextProps,
   type AvatarProps,
   type ButtonKbdProps,
@@ -16,5 +19,6 @@ export {
   type ColorTokensTypes,
   type StichesConfigProps,
   type ThemeTypes,
-  type CreateThemeProps
+  type CreateThemeProps,
+  type SpacingTokensTypes
 } from 'styles/stitches.config';

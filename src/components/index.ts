@@ -1,4 +1,10 @@
 /* PLOP_INJECT_COMPONENT_EXPORT */
+export { Separator, type SeparatorProps } from './separator/Separator';
+export {
+  Form,
+  type FormLoginProps,
+  type FormLoginDataProps
+} from './form/Form';
 export { Input, type InputTextProps } from './input/Input';
 export { Avatar, type AvatarProps } from './avatar/Avatar';
 export { Button, type ButtonProps } from './button/Button';

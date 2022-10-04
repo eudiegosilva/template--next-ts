@@ -18,3 +18,5 @@ export {
   type ThemeTypes,
   type CreateThemeProps
 } from 'styles/stitches.config';
+
+export { signInRequest, type SignInQuerestProps } from 'services';

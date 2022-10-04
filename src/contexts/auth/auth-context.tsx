@@ -18,12 +18,12 @@ type UserProps = {
   name: string;
   email: string;
   avatarUrl: string;
-};
+} | null;
 
 const AuthContext = createContext({} as AuthProviderValueProps);
 
 const AuthProvider = ({ children }: AuthProviderProps) => {
-  const [user, setUser] = useState<UserProps | null>(null);
+  const [user, setUser] = useState<UserProps>(null);
 
   const router = useRouter();
   const isAuthenticated = false;

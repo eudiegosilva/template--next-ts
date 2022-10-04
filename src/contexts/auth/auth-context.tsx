@@ -7,7 +7,7 @@ import { signInRequest, SignInQuerestProps } from 'services/auth-service';
 type AuthProviderValueProps = {
   isAuthenticated: boolean;
   user: UserProps;
-  signIn: (data: SignInQuerestProps) => void;
+  signIn: (data: SignInQuerestProps) => Promise<void>;
 };
 
 type AuthProviderProps = {

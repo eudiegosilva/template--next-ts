@@ -2,7 +2,12 @@ import { useRouter } from 'next/router';
 import { createContext, useEffect, useState } from 'react';
 
 import { setCookie, parseCookies } from 'nookies';
-import { signInRequest, SignInQuerestProps, recoverUserData } from 'services';
+import {
+  signInRequest,
+  SignInQuerestProps,
+  recoverUserData,
+  api
+} from 'services';
 
 type UserProps = {
   name: string;
@@ -38,6 +43,8 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
 
   const signIn = async ({ email, password }: SignInQuerestProps) => {
     const { token, user } = await signInRequest({ email, password });
+
+    api.defaults.headers['Authorization'] = `Bearer ${token}`;
 
     setCookie(undefined, 'next-template--token', token, {
       maxAge: 60 * 60 * 1 // 1 hour

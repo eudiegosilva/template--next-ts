@@ -6,22 +6,24 @@ export const Wrapper = styled('main', {
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'column',
+  alignItems: 'center',
   overflow: 'hidden'
 });
 
 export const Form = styled('form', {
-  display: 'flex',
-  justifyContent: 'center',
-  flexDirection: 'column',
-
-  padding: '50px 15px',
-  border: '2px solid gray',
-  borderRadius: '3px'
+  width: '100%',
+  maxWidth: 'min($container-sm, 100% - 2px)'
 });
 
-export const Input = styled('input', {
-  padding: '5px',
-  border: '1px solid gray',
-  borderRadius: '3px',
-  marginTop: '15px'
+export const ErrorMessageWrapper = styled('div', {
+  my: '$space-02',
+  display: 'flex',
+  justifyContent: 'flex-end',
+  position: 'relative'
+});
+
+export const ErrorMessage = styled('span', {
+  color: '$semantic-danger-11',
+  fontSize: '$font-size-02',
+  position: 'absolute'
 });

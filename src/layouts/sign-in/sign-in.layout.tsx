@@ -1,7 +1,9 @@
+import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 
 import { EnvelopeClosedIcon, LockClosedIcon } from '@radix-ui/react-icons';
 import { PageLayout, Input, Button } from 'components';
+import { AuthContext } from 'contexts/auth/auth-context';
 
 import * as s from './sign-in.layout.styles';
 
@@ -12,10 +14,13 @@ type FormDataProps = {
 
 const SignInLayout = () => {
   const { register, handleSubmit } = useForm<FormDataProps>();
+  const { signIn, user } = useContext(AuthContext);
 
-  const handleSignIn = (data: FormDataProps) => {
-    console.log(data);
+  const handleSignIn = async (data: FormDataProps) => {
+    await signIn(data);
+    console.log({ user });
   };
+
   return (
     <PageLayout title="SignIn — Template NextTS">
       <s.Wrapper>

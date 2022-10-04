@@ -1,1 +1,5 @@
-export { signInRequest, type SignInQuerestProps } from './auth-service';
+export {
+  signInRequest,
+  recoverUserData,
+  type SignInQuerestProps
+} from './auth-service';

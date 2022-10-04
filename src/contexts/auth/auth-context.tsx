@@ -1,8 +1,14 @@
 import { useRouter } from 'next/router';
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
-import { setCookie } from 'nookies';
-import { signInRequest, SignInQuerestProps } from 'services/auth-service';
+import { setCookie, parseCookies } from 'nookies';
+import { signInRequest, SignInQuerestProps, recoverUserData } from 'services';
+
+type UserProps = {
+  name: string;
+  email: string;
+  avatarUrl: string;
+} | null;
 
 type AuthProviderValueProps = {
   isAuthenticated: boolean;
@@ -14,19 +20,21 @@ type AuthProviderProps = {
   children: React.ReactNode;
 };
 
-type UserProps = {
-  name: string;
-  email: string;
-  avatarUrl: string;
-} | null;
-
 const AuthContext = createContext({} as AuthProviderValueProps);
 
 const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<UserProps>(null);
 
   const router = useRouter();
-  const isAuthenticated = false;
+  const isAuthenticated = !!user;
+
+  useEffect(() => {
+    const { 'next-template--token': existingToken } = parseCookies();
+
+    if (existingToken) {
+      recoverUserData().then(response => setUser(response.user));
+    }
+  }, []);
 
   const signIn = async ({ email, password }: SignInQuerestProps) => {
     const { token, user } = await signInRequest({ email, password });
@@ -40,10 +48,10 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
   };
 
   return (
-    <AuthContext.Provider value={{ user, isAuthenticated, signIn }}>
+    <AuthContext.Provider value={{ isAuthenticated, user, signIn }}>
       {children}
     </AuthContext.Provider>
   );
 };
 
-export { AuthProvider };
+export { AuthProvider, AuthContext };

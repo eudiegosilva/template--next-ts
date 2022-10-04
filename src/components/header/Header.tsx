@@ -17,7 +17,7 @@ const Header = () => {
   const { theme, setTheme } = useTheme();
   const [isDarkTheme, setIsDarkTheme] = useState(theme === 'dark');
 
-  const pages: string[] = ['About'];
+  const pages: string[] = ['Dashboard'];
   const router = useRouter();
 
   const toggleTheme = () => {

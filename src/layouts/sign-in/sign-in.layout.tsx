@@ -1,10 +1,10 @@
 import { PageLayout } from 'components';
 
-import * as s from './home.layout.styles';
+import * as s from './sign-in.layout.styles';
 
-const HomeLayout = () => {
+const SignInLayout = () => {
   return (
-    <PageLayout title="Template NextTS">
+    <PageLayout title="SignIn — Template NextTS">
       <s.Wrapper>
         <s.Section>
           <s.Title>
@@ -21,4 +21,4 @@ const HomeLayout = () => {
   );
 };
 
-export { HomeLayout };
+export { SignInLayout };

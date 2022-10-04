@@ -1,4 +1,6 @@
-import { PageLayout } from 'components';
+import { signIn } from 'next-auth/react';
+
+import { PageLayout, Button } from 'components';
 
 import * as s from './home.layout.styles';
 
@@ -16,6 +18,14 @@ const HomeLayout = () => {
             Made with NextJS, TypeScript, Stitches and Radix.
           </s.Description>
         </s.Section>
+
+        <Button
+          onClick={() => {
+            signIn();
+          }}
+        >
+          SignIn
+        </Button>
       </s.Wrapper>
     </PageLayout>
   );

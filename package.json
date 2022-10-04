@@ -23,6 +23,7 @@
     "@radix-ui/react-toggle": "^1.0.0",
     "@stitches/react": "1.2.8",
     "next": "latest",
+    "next-auth": "^4.12.2",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -65,21 +66,21 @@
     "typescript": "^4.7.4"
   },
   "keywords": [
-		"starter template",
-		"starter template stitches react",
-		"nextjs template",
-		"nextjs stitches",
-		"nextjs",
-		"nextjs typescript",
-		"react",
-		"typescript",
-		"typescript stitches",
-		"typescript radix",
-		"typescript nextjs",
-		"typescript react",
-		"boilerplate",
-		"boilerplate nextjs",
-		"boilerplate stitches",
-		"boilerplate react"
-	]
+    "starter template",
+    "starter template stitches react",
+    "nextjs template",
+    "nextjs stitches",
+    "nextjs",
+    "nextjs typescript",
+    "react",
+    "typescript",
+    "typescript stitches",
+    "typescript radix",
+    "typescript nextjs",
+    "typescript react",
+    "boilerplate",
+    "boilerplate nextjs",
+    "boilerplate stitches",
+    "boilerplate react"
+  ]
 }

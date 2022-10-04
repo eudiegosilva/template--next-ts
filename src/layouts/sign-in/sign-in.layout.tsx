@@ -1,8 +1,21 @@
-import { PageLayout } from 'components';
+import { useForm } from 'react-hook-form';
+
+import { EnvelopeClosedIcon, LockClosedIcon } from '@radix-ui/react-icons';
+import { PageLayout, Input, Button } from 'components';
 
 import * as s from './sign-in.layout.styles';
 
+type FormDataProps = {
+  email: string;
+  password: string;
+};
+
 const SignInLayout = () => {
+  const { register, handleSubmit } = useForm<FormDataProps>();
+
+  const handleSignIn = (data: FormDataProps) => {
+    console.log(data);
+  };
   return (
     <PageLayout title="SignIn — Template NextTS">
       <s.Wrapper>
@@ -16,6 +29,30 @@ const SignInLayout = () => {
             Made with NextJS, TypeScript, Stitches and Radix.
           </s.Description>
         </s.Section>
+
+        <s.Form onSubmit={handleSubmit(handleSignIn)}>
+          <Input.InputText
+            name="email"
+            label="Email"
+            type="email"
+            icon={<EnvelopeClosedIcon />}
+            placeholder="your@email.com"
+            register={register}
+          />
+
+          <Input.InputText
+            name="password"
+            label="Password"
+            type="password"
+            placeholder="password"
+            icon={<LockClosedIcon />}
+            register={register}
+          />
+
+          <Button type="submit" isFullWidth>
+            SignIn
+          </Button>
+        </s.Form>
       </s.Wrapper>
     </PageLayout>
   );

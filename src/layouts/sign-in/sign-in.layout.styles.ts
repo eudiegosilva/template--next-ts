@@ -54,3 +54,12 @@ export const Description = styled('p', {
 
   '@greater-md': { fontSize: '$font-size-04' }
 });
+
+export const Form = styled('form', {
+  border: '2px solid red',
+  padding: '$space-04',
+
+  button: {
+    marginTop: '$space-04'
+  }
+});

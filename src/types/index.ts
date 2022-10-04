@@ -1,5 +1,6 @@
 export {
   /* PLOP_INJECT_COMPONENT_TYPES */
+  type InputTextProps,
   type AvatarProps,
   type ButtonKbdProps,
   type ButtonProps,

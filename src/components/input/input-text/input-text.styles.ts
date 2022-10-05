@@ -6,7 +6,12 @@ export const Wrapper = styled('div', {
   alignItems: 'flex-start',
 });
 
-export const LabelWrapper = styled('span', {});
+export const LabelWrapper = styled('span', {
+  display: 'flex',
+  alignItems: 'center',
+  width: '100%',
+  justifyContent: 'space-between',
+});
 
 export const Label = styled('label', {
   fontSize: '$font-size-02',

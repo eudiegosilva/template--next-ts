@@ -60,6 +60,7 @@ const SignInLayout = () => {
             type="email"
             icon={<EnvelopeClosedIcon />}
             placeholder="your@email.com"
+            tooltipContent="email: template@gmail.com"
             register={register}
           />
           <s.ErrorMessageWrapper>
@@ -74,6 +75,7 @@ const SignInLayout = () => {
             type="password"
             placeholder="password"
             icon={<LockClosedIcon />}
+            tooltipContent="password: template"
             register={register}
           />
           <s.ErrorMessageWrapper>

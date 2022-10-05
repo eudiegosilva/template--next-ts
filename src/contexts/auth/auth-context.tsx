@@ -51,8 +51,8 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
 
   const getUserCredentials = async () => {
     return {
-      email: 'user.template@gmail.com',
-      password: '123456',
+      email: 'template@gmail.com',
+      password: 'template',
     };
   };
 

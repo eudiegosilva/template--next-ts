@@ -1,5 +1,7 @@
 import { InputHTMLAttributes } from 'react';
 
+import { Tooltip } from 'components/tooltip/Tooltip';
+
 import * as s from './input-text.styles';
 
 export type InputTextProps = {
@@ -8,6 +10,7 @@ export type InputTextProps = {
   type?: string;
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
+  tooltipContent?: string;
   register?: any;
 } & InputHTMLAttributes<HTMLInputElement>;
 
@@ -17,6 +20,7 @@ const InputText = ({
   type = 'text',
   icon,
   iconPosition = 'left',
+  tooltipContent = '',
   register,
   ...rest
 }: InputTextProps) => (
@@ -24,6 +28,7 @@ const InputText = ({
     {!!label && (
       <s.LabelWrapper>
         <s.Label>{label}</s.Label>
+        {!!tooltipContent && <Tooltip content={tooltipContent} />}
       </s.LabelWrapper>
     )}
     <s.InputWrapper>

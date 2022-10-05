@@ -4,20 +4,20 @@ export const globalStyles = globalCss({
   '*': {
     margin: 0,
     padding: 0,
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
   'html, body': {
     fontFamily: '$font-family-body',
     WebkitFontSmoothing: 'antialiased',
     '&::-webkit-scrollbar': {
       backgroundColor: 'transparent',
-      width: 4
+      width: 4,
     },
     '&::-webkit-scrollbar-track': {
-      backgroundColor: 'transparent'
+      backgroundColor: 'transparent',
     },
     '&::-webkit-scrollbar-thumb': {
-      backgroundColor: '$brand-primary-09'
-    }
-  }
+      backgroundColor: '$brand-primary-09',
+    },
+  },
 });

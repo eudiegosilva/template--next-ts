@@ -7,15 +7,15 @@ const story: Meta<LogoProps> = {
   component: Logo,
   args: {
     size: 32,
-    color: '$primary-09'
+    color: '$primary-09',
   },
   argTypes: {
     size: { description: 'Logo size' },
-    color: { description: 'Logo color' }
+    color: { description: 'Logo color' },
   },
-  parameters: {}
+  parameters: {},
 };
 
-export const LogoExample: Story<LogoProps> = args => <Logo {...args} />;
+export const LogoExample: Story<LogoProps> = (args) => <Logo {...args} />;
 
 export default story;

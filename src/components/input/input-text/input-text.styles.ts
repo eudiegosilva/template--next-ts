@@ -3,7 +3,7 @@ import { styled } from 'styles/stitches.config';
 export const Wrapper = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'flex-start'
+  alignItems: 'flex-start',
 });
 
 export const LabelWrapper = styled('span', {});
@@ -11,7 +11,7 @@ export const LabelWrapper = styled('span', {});
 export const Label = styled('label', {
   fontSize: '$font-size-02',
   color: '$primary-09',
-  lineHeight: '$font-line-height-200'
+  lineHeight: '$font-line-height-200',
 });
 
 export const InputWrapper = styled('div', {
@@ -23,8 +23,8 @@ export const InputWrapper = styled('div', {
   width: '100%',
   minHeight: 35,
   '&:focus-within': {
-    boxShadow: '$input-focus'
-  }
+    boxShadow: '$input-focus',
+  },
 });
 
 export const InputText = styled('input', {
@@ -35,7 +35,7 @@ export const InputText = styled('input', {
   outline: 'none',
   width: '100%',
   color: '$primary-09',
-  fontWeight: '500'
+  fontWeight: '500',
 });
 
 export const IconWrapper = styled('div', {
@@ -47,7 +47,7 @@ export const IconWrapper = styled('div', {
   variants: {
     iconPosition: {
       left: { order: 0 },
-      right: { order: 1 }
-    }
-  }
+      right: { order: 1 },
+    },
+  },
 });

@@ -17,7 +17,7 @@ export const Toggle = styled(RadixToggle.Root, {
   boxShadow: '$button-normal',
   '&:hover': { backgroundColor: '$primary-03' },
   '&[data-state=on]': {
-    color: '$text-contrast-high'
+    color: '$text-contrast-high',
   },
-  '&:focus': { boxShadow: '$button-focus' }
+  '&:focus': { boxShadow: '$button-focus' },
 });

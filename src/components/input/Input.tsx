@@ -1,7 +1,7 @@
 import { InputText, type InputTextProps } from './input-text/InputText';
 
 const Input = {
-  InputText
+  InputText,
 };
 
 export { Input, type InputTextProps };

@@ -11,7 +11,7 @@ import {
   transitions,
   zIndices,
   utils,
-  medias
+  medias,
 } from './tokens';
 
 export type StichesConfigProps = Stitches.CSS<typeof config>;
@@ -27,7 +27,7 @@ export const {
   globalCss,
   keyframes,
   styled,
-  theme: stitchesTheme
+  theme: stitchesTheme,
 } = createStitches({
   theme: {
     borderStyles: {},
@@ -43,10 +43,10 @@ export const {
     sizes: { ...sizes },
     space: { ...spacings },
     transitions: { ...transitions },
-    zIndices: { ...zIndices }
+    zIndices: { ...zIndices },
   },
   utils: { ...utils },
-  media: { ...medias }
+  media: { ...medias },
 });
 
 export const theme: {
@@ -54,10 +54,10 @@ export const theme: {
 } = {
   dark: createTheme({
     colors: colors.dark,
-    shadows: shadows.dark
+    shadows: shadows.dark,
   }),
   light: createTheme({
     colors: colors.light,
-    shadows: shadows.light
-  })
+    shadows: shadows.light,
+  }),
 };

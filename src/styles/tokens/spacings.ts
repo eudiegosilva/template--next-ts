@@ -7,7 +7,7 @@ const spacings = {
   'space-06': '2rem', // 32px
   'space-07': '2.5rem', // 40px
   'space-08': '3rem', // 48px
-  'space-09': '4rem' // 64px
+  'space-09': '4rem', // 64px
 };
 
 export { spacings };

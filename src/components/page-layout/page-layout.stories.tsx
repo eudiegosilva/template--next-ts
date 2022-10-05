@@ -7,10 +7,10 @@ const story: Meta<PageLayoutProps> = {
   component: PageLayout,
   args: {},
   argTypes: {},
-  parameters: { layout: 'fullscreen' }
+  parameters: { layout: 'fullscreen' },
 };
 
-export const PageLayoutExample: Story<PageLayoutProps> = args => (
+export const PageLayoutExample: Story<PageLayoutProps> = (args) => (
   <PageLayout {...args} />
 );
 

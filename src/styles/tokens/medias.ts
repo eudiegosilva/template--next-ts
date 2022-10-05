@@ -6,7 +6,7 @@ const medias = {
   'less-sm': '(max-width: 450px)',
   'less-md': '(max-width: 768px)',
   'less-lg': '(max-width: 1170px)',
-  'less-xl': '(max-width: 1440px)'
+  'less-xl': '(max-width: 1440px)',
 };
 
 export { medias };

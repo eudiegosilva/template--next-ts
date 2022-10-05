@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         defaultTheme="light"
         value={{
           dark: theme.dark.className,
-          light: theme.light.className
+          light: theme.light.className,
         }}
       >
         <Component {...pageProps} />

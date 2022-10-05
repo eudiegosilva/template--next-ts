@@ -8,14 +8,14 @@ export const Wrapper = styled('main', {
   flexDirection: 'column',
   overflow: 'hidden',
   alignItems: 'center',
-  textAlign: 'center'
+  textAlign: 'center',
 });
 
 export const Section = styled('section', {
   maxWidth: '$container-md',
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center'
+  justifyContent: 'center',
 });
 
 export const Title = styled('h1', {
@@ -27,17 +27,17 @@ export const Title = styled('h1', {
 
   '&::selection': {
     backgroundColor: '$primary-09',
-    color: '$text-white'
+    color: '$text-white',
   },
-  '@greater-md': { fontSize: '$font-size-06' }
+  '@greater-md': { fontSize: '$font-size-06' },
 });
 
 export const Strong = styled('strong', {
   fontWeight: '$font-weight-900',
   '&::selection': {
     backgroundColor: '$primary-09',
-    color: '$text-white'
-  }
+    color: '$text-white',
+  },
 });
 
 export const Description = styled('p', {
@@ -49,10 +49,10 @@ export const Description = styled('p', {
   marginBottom: '$space-07',
   '&::selection': {
     backgroundColor: '$secondary-09',
-    color: '$text-white'
+    color: '$text-white',
   },
 
-  '@greater-md': { fontSize: '$font-size-04' }
+  '@greater-md': { fontSize: '$font-size-04' },
 });
 
 export const Form = styled('form', {
@@ -60,6 +60,6 @@ export const Form = styled('form', {
   padding: '$space-04',
 
   button: {
-    marginTop: '$space-04'
-  }
+    marginTop: '$space-04',
+  },
 });

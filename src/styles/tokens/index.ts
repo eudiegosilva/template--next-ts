@@ -21,5 +21,5 @@ export {
   spacings,
   transitions,
   utils,
-  zIndices
+  zIndices,
 };

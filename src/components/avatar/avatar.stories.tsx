@@ -10,23 +10,23 @@ const story: Meta<AvatarProps> = {
     src: stitchesLogo.src,
     alt: 'Stitches Logo',
     fallbackContent: 'TN',
-    fallbackDelay: 600
+    fallbackDelay: 600,
   },
   argTypes: {
     src: { description: 'Picture path' },
     alt: { description: 'Picture description' },
     fallbackContent: {
       description:
-        'Useful for delaying rendering so it only appears for those with slower connections.'
+        'Useful for delaying rendering so it only appears for those with slower connections.',
     },
     fallbackDelay: {
       description:
-        'Useful for delaying rendering so it only appears for those with slower connections.'
-    }
+        'Useful for delaying rendering so it only appears for those with slower connections.',
+    },
   },
-  parameters: {}
+  parameters: {},
 };
 
-export const AvatarExample: Story<AvatarProps> = args => <Avatar {...args} />;
+export const AvatarExample: Story<AvatarProps> = (args) => <Avatar {...args} />;
 
 export default story;

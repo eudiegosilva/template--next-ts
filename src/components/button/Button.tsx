@@ -13,7 +13,7 @@ const Button = ({
   variant = 'primary',
   type = 'button',
   isFullWidth = false,
-  onClick
+  onClick,
 }: ButtonProps) => {
   return (
     <s.ButtonWrapper

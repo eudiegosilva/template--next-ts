@@ -6,7 +6,7 @@ import {
   pinkDark,
   violet,
   violetDark,
-  whiteA
+  whiteA,
 } from '@radix-ui/colors';
 
 export type ColorCategoryTypes = 'primary' | 'secondary' | 'natural';
@@ -23,13 +23,13 @@ const themes: { [key in ThemeTypes]: PaletteTypes } = {
   light: {
     primary: violet,
     secondary: pink,
-    natural: mauve
+    natural: mauve,
   },
   dark: {
     primary: violetDark,
     secondary: pinkDark,
-    natural: mauveDark
-  }
+    natural: mauveDark,
+  },
 };
 
 const makePalette = (theme: ThemeTypes) => {
@@ -47,7 +47,7 @@ const makePalette = (theme: ThemeTypes) => {
     'primary-09': palette.primary.violet9,
     'primary-10': palette.primary.violet10,
     'primary-11': palette.primary.violet11,
-    'primary-12': palette.primary.violet12
+    'primary-12': palette.primary.violet12,
   };
 
   const secondary = {
@@ -62,7 +62,7 @@ const makePalette = (theme: ThemeTypes) => {
     'secondary-09': palette.secondary.pink9,
     'secondary-10': palette.secondary.pink10,
     'secondary-11': palette.secondary.pink11,
-    'secondary-12': palette.secondary.pink12
+    'secondary-12': palette.secondary.pink12,
   };
 
   const base = {
@@ -90,14 +90,14 @@ const makePalette = (theme: ThemeTypes) => {
     'white-09': whiteA.whiteA9,
     'white-10': whiteA.whiteA10,
     'white-11': whiteA.whiteA11,
-    'white-12': whiteA.whiteA12
+    'white-12': whiteA.whiteA12,
   };
 
   const text = {
     'text-contrast-high': palette.natural.mauve12,
     'text-contrast-low': palette.natural.mauve11,
     'text-black': blackA.blackA12,
-    'text-white': whiteA.whiteA12
+    'text-white': whiteA.whiteA12,
   };
 
   const natural = {
@@ -112,7 +112,7 @@ const makePalette = (theme: ThemeTypes) => {
     'natural-09': palette.natural.mauve9,
     'natural-10': palette.natural.mauve10,
     'natural-11': palette.natural.mauve11,
-    'natural-12': palette.natural.mauve12
+    'natural-12': palette.natural.mauve12,
   };
 
   return {
@@ -120,11 +120,11 @@ const makePalette = (theme: ThemeTypes) => {
     ...natural,
     ...primary,
     ...secondary,
-    ...text
+    ...text,
   };
 };
 
 export const colors = {
   dark: makePalette('dark'),
-  light: makePalette('light')
+  light: makePalette('light'),
 };

@@ -9,14 +9,14 @@ export {
   type LogoProps,
   type PageLayoutProps,
   type SpheresProps,
-  type ToggleProps
+  type ToggleProps,
 } from 'components';
 
 export {
   type ColorTokensTypes,
   type StichesConfigProps,
   type ThemeTypes,
-  type CreateThemeProps
+  type CreateThemeProps,
 } from 'styles/stitches.config';
 
 export { signInRequest, type SignInQuerestProps } from 'services';

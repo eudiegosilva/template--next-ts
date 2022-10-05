@@ -14,7 +14,7 @@ const story: Meta<InputTextProps> = {
     type: 'text',
     iconPosition: 'left',
     icon: <PersonIcon />,
-    register: () => null
+    register: () => null,
   },
   argTypes: {
     name: { description: 'Specifies the **name** of Input' },
@@ -25,14 +25,14 @@ const story: Meta<InputTextProps> = {
     onChange: {
       description: 'Event executed when Input value is changed',
       action: 'input-changed',
-      table: { disable: true }
+      table: { disable: true },
     },
-    register: { table: { disable: true } }
+    register: { table: { disable: true } },
   },
-  parameters: {}
+  parameters: {},
 };
 
-export const InputTextExample: Story<InputTextProps> = args => {
+export const InputTextExample: Story<InputTextProps> = (args) => {
   const { register } = useForm();
   return <InputText register={register} {...args} />;
 };

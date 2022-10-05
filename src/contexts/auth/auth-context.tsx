@@ -49,7 +49,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
     }
   }, []);
 
-  const getCredentials = async () => {
+  const getUserCredentials = async () => {
     return {
       email: 'user@gmail.com',
       password: '123456',
@@ -57,7 +57,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
   };
 
   const signIn = async ({ email, password }: SignInQuerestProps) => {
-    setUserCredentials(await getCredentials());
+    setUserCredentials(await getUserCredentials());
 
     if (
       email === userCredentials.email &&

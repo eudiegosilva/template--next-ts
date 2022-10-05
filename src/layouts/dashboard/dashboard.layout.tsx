@@ -1,18 +1,12 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 
 import { PageLayout } from 'components';
 import { AuthContext } from 'contexts/auth/auth-context';
-// import { api } from 'services';
 
 import * as s from './dashboard.layout.styles';
 
 const DashboardLayout = () => {
   const { user } = useContext(AuthContext);
-  console.log({ user });
-
-  useEffect(() => {
-    // api.get('/users');
-  }, []);
 
   return (
     <PageLayout title="Dashboard — Template NextTS" showHeader>

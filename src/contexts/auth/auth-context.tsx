@@ -6,7 +6,7 @@ import {
   signInRequest,
   SignInQuerestProps,
   recoverUserData,
-  api
+  apiClient,
 } from 'services';
 
 type UserProps = {
@@ -37,17 +37,17 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
     const { 'next-template--token': existingToken } = parseCookies();
 
     if (existingToken) {
-      recoverUserData().then(response => setUser(response.user));
+      recoverUserData().then((response) => setUser(response.user));
     }
   }, []);
 
   const signIn = async ({ email, password }: SignInQuerestProps) => {
     const { token, user } = await signInRequest({ email, password });
 
-    api.defaults.headers['Authorization'] = `Bearer ${token}`;
+    apiClient.defaults.headers['Authorization'] = `Bearer ${token}`;
 
     setCookie(undefined, 'next-template--token', token, {
-      maxAge: 60 * 60 * 1 // 1 hour
+      maxAge: 60 * 60 * 1, // 1 hour
     });
 
     setUser(user);

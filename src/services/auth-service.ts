@@ -6,7 +6,7 @@ export type SignInQuerestProps = {
 };
 
 const responseDelay = (amount = 100) => {
-  return new Promise(resolve => setTimeout(resolve, amount));
+  return new Promise((resolve) => setTimeout(resolve, amount));
 };
 
 const signInRequest = async ({ email, password }: SignInQuerestProps) => {
@@ -17,8 +17,8 @@ const signInRequest = async ({ email, password }: SignInQuerestProps) => {
     user: {
       name: 'Diego Silva',
       email: 'social.diegosilvatech@gmail.com',
-      avatarUrl: 'https://github.com/diegosilvatech.png'
-    }
+      avatarUrl: 'https://github.com/diegosilvatech.png',
+    },
   };
 };
 
@@ -30,8 +30,8 @@ const recoverUserData = async () => {
     user: {
       name: 'Diego Silva',
       email: 'social.diegosilvatech@gmail.com',
-      avatarUrl: 'https://github.com/diegosilvatech.png'
-    }
+      avatarUrl: 'https://github.com/diegosilvatech.png',
+    },
   };
 };
 

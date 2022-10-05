@@ -18,7 +18,6 @@ const SignInLayout = () => {
 
   const handleSignIn = async (data: FormDataProps) => {
     await signIn(data);
-    console.log({ user });
   };
 
   return (

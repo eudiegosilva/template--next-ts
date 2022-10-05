@@ -1,7 +1,8 @@
 export {
   signInRequest,
   recoverUserData,
-  type SignInQuerestProps
+  type SignInQuerestProps,
 } from './auth-service';
 
-export { api } from './api';
+export { apiClient } from './api-client';
+export { apiServer } from './api-server';

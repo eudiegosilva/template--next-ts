@@ -14,16 +14,6 @@ export const ButtonWrapper = styled('button', {
   variants: {
     variant: {
       primary: {
-        backgroundColor: '$primary-03',
-        borderColor: '$primary-03',
-        color: '$primary-11',
-        '&:hover': {
-          backgroundColor: '$primary-04',
-          borderColor: '$primary-04',
-          color: '$primary-11',
-        },
-      },
-      secondary: {
         backgroundColor: '$primary-09',
         borderColor: '$primary-09',
         color: '$white-12',
@@ -31,6 +21,16 @@ export const ButtonWrapper = styled('button', {
           backgroundColor: '$primary-10',
           borderColor: '$primary-10',
           color: '$white-12',
+        },
+      },
+      secondary: {
+        backgroundColor: '$primary-03',
+        borderColor: '$primary-03',
+        color: '$primary-11',
+        '&:hover': {
+          backgroundColor: '$primary-04',
+          borderColor: '$primary-04',
+          color: '$primary-11',
         },
       },
     },

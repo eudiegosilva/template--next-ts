@@ -84,7 +84,7 @@ const SignInLayout = () => {
 
           <Separator margin="$space-05" />
 
-          <Button type="submit" isFullWidth variant="secondary">
+          <Button type="submit" isFullWidth>
             Sign In
           </Button>
         </s.Form>

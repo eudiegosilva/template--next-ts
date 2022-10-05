@@ -41,17 +41,27 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
     }
   }, []);
 
+  const getCredentials = async () => {
+    return {
+      email: 'user@gmail.com',
+      password: '123456',
+    };
+  };
+
   const signIn = async ({ email, password }: SignInQuerestProps) => {
-    const { token, user } = await signInRequest({ email, password });
+    const credentials = await getCredentials();
 
-    apiClient.defaults.headers['Authorization'] = `Bearer ${token}`;
+    if (email === credentials.email && password === credentials.password) {
+      const { token, user } = await signInRequest({ email, password });
+      apiClient.defaults.headers['Authorization'] = `Bearer ${token}`;
 
-    setCookie(undefined, 'next-template--token', token, {
-      maxAge: 60 * 60 * 1, // 1 hour
-    });
+      setCookie(undefined, 'next-template--token', token, {
+        maxAge: 60 * 60 * 1, // 1 hour
+      });
 
-    setUser(user);
-    router.push('/dashboard');
+      setUser(user);
+      router.push('/dashboard');
+    }
   };
 
   return (

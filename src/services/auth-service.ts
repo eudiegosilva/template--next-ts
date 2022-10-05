@@ -15,8 +15,8 @@ const signInRequest = async ({ email, password }: SignInQuerestProps) => {
   return {
     token: uuid(),
     user: {
-      name: 'Diego Silva',
-      email: 'social.diegosilvatech@gmail.com',
+      name: 'User Silva',
+      email: 'user@gmail.com',
       avatarUrl: 'https://github.com/diegosilvatech.png',
     },
   };
@@ -28,8 +28,8 @@ const recoverUserData = async () => {
   return {
     token: uuid(),
     user: {
-      name: 'Diego Silva',
-      email: 'social.diegosilvatech@gmail.com',
+      name: 'User Silva',
+      email: 'user@gmail.com',
       avatarUrl: 'https://github.com/diegosilvatech.png',
     },
   };

@@ -1,7 +1,7 @@
 const families = {
   'font-family-heading': 'Epilogue, sans-serif',
   'font-family-body': 'Epilogue, sans-serif',
-  'font-family-code': 'Fira Code, monospace'
+  'font-family-code': 'Fira Code, monospace',
 };
 
 // major third, base 16px
@@ -14,7 +14,7 @@ const sizes = {
   'font-size-06': '1.953rem', // 31.25px
   'font-size-07': '2.441rem', // 39.06px
   'font-size-08': '3.052rem', // 48.83px
-  'font-size-09': '3.815rem' // 61.04px
+  'font-size-09': '3.815rem', // 61.04px
 };
 
 const weights = {
@@ -26,12 +26,12 @@ const weights = {
   'font-weight-600': 600,
   'font-weight-700': 700,
   'font-weight-800': 800,
-  'font-weight-900': 900
+  'font-weight-900': 900,
 };
 
 const letterSpacings = {
   'font-letter-spacing-heading': '-0.01rem',
-  'font-letter-spacing-body': '0.1rem'
+  'font-letter-spacing-body': '0.1rem',
 };
 
 const lineHeights = {
@@ -41,7 +41,7 @@ const lineHeights = {
   'font-line-height-133': '133%',
   'font-line-height-150': '150%',
   'font-line-height-170': '170%',
-  'font-line-height-200': '200%'
+  'font-line-height-200': '200%',
 };
 
 export const fonts = { families, sizes, weights, letterSpacings, lineHeights };

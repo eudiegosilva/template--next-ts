@@ -6,15 +6,15 @@ const story: Meta<ContainerProps> = {
   title: '- Helpers/Container',
   component: Container,
   args: { children: 'Responsive content' },
-  argTypes: { children: { description: 'Container content' } }
+  argTypes: { children: { description: 'Container content' } },
 };
 
-export const ContainerExample: Story<ContainerProps> = args => (
+export const ContainerExample: Story<ContainerProps> = (args) => (
   <div
     style={{
       border: '2px solid #5746AF',
       backgroundColor: '#C4B8F3',
-      borderRadius: '4px'
+      borderRadius: '4px',
     }}
   >
     <Container {...args}>
@@ -22,7 +22,7 @@ export const ContainerExample: Story<ContainerProps> = args => (
         style={{
           backgroundColor: '#E4DEFC',
           lineHeight: '150%',
-          fontWeight: '300'
+          fontWeight: '300',
         }}
       >
         {args.children}

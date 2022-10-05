@@ -16,16 +16,23 @@
     "generate": "yarn plop --plopfile generators/plopfile.js"
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.8",
     "@radix-ui/colors": "^0.1.8",
     "@radix-ui/react-avatar": "^1.0.0",
     "@radix-ui/react-dropdown-menu": "^1.0.0",
     "@radix-ui/react-icons": "^1.1.1",
+    "@radix-ui/react-separator": "^1.0.0",
     "@radix-ui/react-toggle": "^1.0.0",
     "@stitches/react": "1.2.8",
+    "axios": "^1.0.0",
     "next": "latest",
     "next-themes": "^0.2.1",
+    "nookies": "^2.5.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.36.1",
+    "uuid": "^9.0.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.18.13",
@@ -40,9 +47,11 @@
     "@storybook/manager-webpack5": "^6.5.10",
     "@storybook/react": "^6.5.10",
     "@storybook/testing-library": "^0.0.13",
+    "@types/cookie": "^0.5.1",
     "@types/node": "^18.0.6",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "babel-loader": "^8.2.5",
@@ -65,21 +74,21 @@
     "typescript": "^4.7.4"
   },
   "keywords": [
-		"starter template",
-		"starter template stitches react",
-		"nextjs template",
-		"nextjs stitches",
-		"nextjs",
-		"nextjs typescript",
-		"react",
-		"typescript",
-		"typescript stitches",
-		"typescript radix",
-		"typescript nextjs",
-		"typescript react",
-		"boilerplate",
-		"boilerplate nextjs",
-		"boilerplate stitches",
-		"boilerplate react"
-	]
+    "starter template",
+    "starter template stitches react",
+    "nextjs template",
+    "nextjs stitches",
+    "nextjs",
+    "nextjs typescript",
+    "react",
+    "typescript",
+    "typescript stitches",
+    "typescript radix",
+    "typescript nextjs",
+    "typescript react",
+    "boilerplate",
+    "boilerplate nextjs",
+    "boilerplate stitches",
+    "boilerplate react"
+  ]
 }

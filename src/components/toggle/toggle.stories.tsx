@@ -7,18 +7,18 @@ const story: Meta<ToggleProps> = {
   title: 'Atoms/Toggle',
   component: Toggle,
   args: {
-    children: <SunIcon />
+    children: <SunIcon />,
   },
   argTypes: {
     children: { description: 'Toggle content' },
     onClick: {
       description: 'Event executed when the toggle is clicked',
-      action: 'toggle-clicked'
-    }
+      action: 'toggle-clicked',
+    },
   },
-  parameters: {}
+  parameters: {},
 };
 
-export const ToggleExample: Story<ToggleProps> = args => <Toggle {...args} />;
+export const ToggleExample: Story<ToggleProps> = (args) => <Toggle {...args} />;
 
 export default story;

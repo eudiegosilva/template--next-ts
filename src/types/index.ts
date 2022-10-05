@@ -1,5 +1,7 @@
 export {
   /* PLOP_INJECT_COMPONENT_TYPES */
+  type SeparatorProps,
+  type InputTextProps,
   type AvatarProps,
   type ButtonKbdProps,
   type ButtonProps,
@@ -8,12 +10,14 @@ export {
   type LogoProps,
   type PageLayoutProps,
   type SpheresProps,
-  type ToggleProps
+  type ToggleProps,
 } from 'components';
 
 export {
   type ColorTokensTypes,
   type StichesConfigProps,
   type ThemeTypes,
-  type CreateThemeProps
+  type CreateThemeProps,
 } from 'styles/stitches.config';
+
+export { signInRequest, type SignInQuerestProps } from 'services';

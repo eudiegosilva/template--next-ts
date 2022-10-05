@@ -7,5 +7,5 @@ export const Wrapper = styled('kbd', {
   borderRadius: '$border-radius-01',
   fontFamily: '$font-family-code',
   fontWeight: '$font-weight-500',
-  fontSize: '$font-size-03'
+  fontSize: '$font-size-03',
 });

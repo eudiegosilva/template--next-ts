@@ -4,12 +4,14 @@ import {
   mauveDark,
   pink,
   pinkDark,
+  red,
+  redDark,
   violet,
   violetDark,
-  whiteA
+  whiteA,
 } from '@radix-ui/colors';
 
-export type ColorCategoryTypes = 'primary' | 'secondary' | 'natural';
+export type ColorCategoryTypes = 'primary' | 'secondary' | 'natural' | 'danger';
 
 export type PaletteTypes = {
   [key in ColorCategoryTypes]: {
@@ -23,13 +25,15 @@ const themes: { [key in ThemeTypes]: PaletteTypes } = {
   light: {
     primary: violet,
     secondary: pink,
-    natural: mauve
+    natural: mauve,
+    danger: red,
   },
   dark: {
     primary: violetDark,
     secondary: pinkDark,
-    natural: mauveDark
-  }
+    natural: mauveDark,
+    danger: redDark,
+  },
 };
 
 const makePalette = (theme: ThemeTypes) => {
@@ -47,7 +51,7 @@ const makePalette = (theme: ThemeTypes) => {
     'primary-09': palette.primary.violet9,
     'primary-10': palette.primary.violet10,
     'primary-11': palette.primary.violet11,
-    'primary-12': palette.primary.violet12
+    'primary-12': palette.primary.violet12,
   };
 
   const secondary = {
@@ -62,7 +66,7 @@ const makePalette = (theme: ThemeTypes) => {
     'secondary-09': palette.secondary.pink9,
     'secondary-10': palette.secondary.pink10,
     'secondary-11': palette.secondary.pink11,
-    'secondary-12': palette.secondary.pink12
+    'secondary-12': palette.secondary.pink12,
   };
 
   const base = {
@@ -90,14 +94,14 @@ const makePalette = (theme: ThemeTypes) => {
     'white-09': whiteA.whiteA9,
     'white-10': whiteA.whiteA10,
     'white-11': whiteA.whiteA11,
-    'white-12': whiteA.whiteA12
+    'white-12': whiteA.whiteA12,
   };
 
   const text = {
     'text-contrast-high': palette.natural.mauve12,
     'text-contrast-low': palette.natural.mauve11,
     'text-black': blackA.blackA12,
-    'text-white': whiteA.whiteA12
+    'text-white': whiteA.whiteA12,
   };
 
   const natural = {
@@ -112,7 +116,22 @@ const makePalette = (theme: ThemeTypes) => {
     'natural-09': palette.natural.mauve9,
     'natural-10': palette.natural.mauve10,
     'natural-11': palette.natural.mauve11,
-    'natural-12': palette.natural.mauve12
+    'natural-12': palette.natural.mauve12,
+  };
+
+  const semantic = {
+    'semantic-danger-01': palette.danger.red1,
+    'semantic-danger-02': palette.danger.red2,
+    'semantic-danger-03': palette.danger.red3,
+    'semantic-danger-04': palette.danger.red4,
+    'semantic-danger-05': palette.danger.red5,
+    'semantic-danger-06': palette.danger.red6,
+    'semantic-danger-07': palette.danger.red7,
+    'semantic-danger-08': palette.danger.red8,
+    'semantic-danger-09': palette.danger.red9,
+    'semantic-danger-10': palette.danger.red10,
+    'semantic-danger-11': palette.danger.red11,
+    'semantic-danger-12': palette.danger.red12,
   };
 
   return {
@@ -120,11 +139,12 @@ const makePalette = (theme: ThemeTypes) => {
     ...natural,
     ...primary,
     ...secondary,
-    ...text
+    ...text,
+    ...semantic,
   };
 };
 
 export const colors = {
   dark: makePalette('dark'),
-  light: makePalette('light')
+  light: makePalette('light'),
 };

@@ -6,5 +6,5 @@ export const Wrapper = styled('main', {
   display: 'flex',
   justifyContent: 'center',
   flexDirection: 'column',
-  overflow: 'hidden'
+  overflow: 'hidden',
 });

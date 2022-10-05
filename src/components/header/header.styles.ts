@@ -7,22 +7,22 @@ export const Header = styled('header', {
   top: 0,
   width: '100%',
   display: 'flex',
-  alignItems: 'center'
+  alignItems: 'center',
 });
 
 export const HeaderContainer = styled(Container, {
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'space-between'
+  justifyContent: 'space-between',
 });
 
 export const LogoWrapper = styled('div', {
-  '&:hover': { cursor: 'pointer' }
+  '&:hover': { cursor: 'pointer' },
 });
 
 export const List = styled('ul', {
   listStyle: 'none',
-  display: 'flex'
+  display: 'flex',
 });
 
 export const ListItem = styled('li', {});
@@ -44,7 +44,7 @@ export const LinkItem = styled('a', {
   '&:hover': {
     color: '$text-contrast-high',
     cursor: 'pointer',
-    '&::after': { backgroundColor: '$primary-09' }
+    '&::after': { backgroundColor: '$primary-09' },
   },
 
   '&::after': {
@@ -52,16 +52,16 @@ export const LinkItem = styled('a', {
     position: 'absolute',
     bottom: 8,
     height: '1px',
-    width: '40%'
+    width: '40%',
   },
 
   variants: {
     variant: {
       active: {
         color: '$text-contrast-high',
-        '&::after': { backgroundColor: '$text-contrast-high' }
+        '&::after': { backgroundColor: '$text-contrast-high' },
       },
-      inactive: { '&::after': { display: 'none' } }
-    }
-  }
+      inactive: { '&::after': { display: 'none' } },
+    },
+  },
 });

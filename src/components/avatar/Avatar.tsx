@@ -11,7 +11,7 @@ const Avatar = ({
   alt,
   fallbackContent,
   fallbackDelay = 600,
-  src
+  src,
 }: AvatarProps) => (
   <s.Avatar>
     <s.Image src={src} alt={alt} />

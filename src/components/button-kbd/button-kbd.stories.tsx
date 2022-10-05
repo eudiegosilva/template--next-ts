@@ -7,10 +7,10 @@ const story: Meta<ButtonKbdProps> = {
   component: ButtonKbd,
   args: { children: 'ctrl' },
   argTypes: {},
-  parameters: {}
+  parameters: {},
 };
 
-export const ButtonKbdExample: Story<ButtonKbdProps> = args => (
+export const ButtonKbdExample: Story<ButtonKbdProps> = (args) => (
   <ButtonKbd {...args} />
 );
 

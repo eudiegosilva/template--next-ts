@@ -7,10 +7,10 @@ const story: Meta<SpheresProps> = {
   component: Spheres,
   args: {},
   argTypes: {},
-  parameters: {}
+  parameters: {},
 };
 
-export const SpheresExample: Story<SpheresProps> = args => (
+export const SpheresExample: Story<SpheresProps> = (args) => (
   <Spheres {...args} />
 );
 

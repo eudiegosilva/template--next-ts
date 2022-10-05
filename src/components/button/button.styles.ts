@@ -2,14 +2,14 @@ import { styled } from 'styles/stitches.config';
 
 export const ButtonWrapper = styled('button', {
   fontFamily: '$font-family-body',
-  fontSize: '$font-size-04',
+  fontSize: '$font-size-03',
   fontWeight: '$font-weight-500',
   border: '1px solid',
   borderRadius: '$border-radius-01',
   padding: '$space-02 $space-04',
 
   '&:hover': {
-    cursor: 'pointer'
+    cursor: 'pointer',
   },
   variants: {
     variant: {
@@ -20,8 +20,8 @@ export const ButtonWrapper = styled('button', {
         '&:hover': {
           backgroundColor: '$primary-04',
           borderColor: '$primary-04',
-          color: '$primary-11'
-        }
+          color: '$primary-11',
+        },
       },
       secondary: {
         backgroundColor: '$primary-09',
@@ -30,14 +30,14 @@ export const ButtonWrapper = styled('button', {
         '&:hover': {
           backgroundColor: '$primary-10',
           borderColor: '$primary-10',
-          color: '$white-12'
-        }
-      }
+          color: '$white-12',
+        },
+      },
     },
     isFullWidth: {
       true: {
-        width: '100%'
-      }
-    }
-  }
+        width: '100%',
+      },
+    },
+  },
 });

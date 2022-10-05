@@ -46,7 +46,7 @@ const Header = () => {
           <Logo size={35} color="$primary-09" />
         </s.LogoWrapper>
         <s.List>
-          {pages.map(page => (
+          {pages.map((page) => (
             <LinkItem key={page} page={page} />
           ))}
         </s.List>

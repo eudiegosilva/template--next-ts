@@ -13,7 +13,7 @@ export type PageLayoutProps = {
 const PageLayout = ({
   children,
   title,
-  showHeader = false
+  showHeader = false,
 }: PageLayoutProps) => (
   <s.PargeLayoutWrapper>
     <Head>

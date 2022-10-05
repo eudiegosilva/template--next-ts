@@ -9,7 +9,7 @@ const responseDelay = (amount = 100) => {
   return new Promise((resolve) => setTimeout(resolve, amount));
 };
 
-const signInRequest = async ({ email, password }: SignInQuerestProps) => {
+const signInRequest = async ({}: SignInQuerestProps) => {
   await responseDelay();
 
   return {

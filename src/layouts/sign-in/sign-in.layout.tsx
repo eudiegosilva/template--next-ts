@@ -1,9 +1,11 @@
 import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 
+import { yupResolver } from '@hookform/resolvers/yup';
 import { EnvelopeClosedIcon, LockClosedIcon } from '@radix-ui/react-icons';
-import { PageLayout, Input, Button } from 'components';
+import { PageLayout, Input, Button, Separator } from 'components';
 import { AuthContext } from 'contexts/auth/auth-context';
+import { signInValidationSchema } from 'validations';
 
 import * as s from './sign-in.layout.styles';
 
@@ -13,8 +15,15 @@ type FormDataProps = {
 };
 
 const SignInLayout = () => {
-  const { register, handleSubmit } = useForm<FormDataProps>();
-  const { signIn, user } = useContext(AuthContext);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormDataProps>({
+    resolver: yupResolver(signInValidationSchema),
+  });
+
+  const { signIn } = useContext(AuthContext);
 
   const handleSignIn = async (data: FormDataProps) => {
     await signIn(data);
@@ -43,6 +52,11 @@ const SignInLayout = () => {
             placeholder="your@email.com"
             register={register}
           />
+          <s.ErrorMessageWrapper>
+            {errors.email && (
+              <s.ErrorMessage>{errors.email.message}</s.ErrorMessage>
+            )}
+          </s.ErrorMessageWrapper>
 
           <Input.InputText
             name="password"
@@ -52,6 +66,13 @@ const SignInLayout = () => {
             icon={<LockClosedIcon />}
             register={register}
           />
+          <s.ErrorMessageWrapper>
+            {errors.password && (
+              <s.ErrorMessage>{errors.password.message}</s.ErrorMessage>
+            )}
+          </s.ErrorMessageWrapper>
+
+          <Separator margin="$space-05" />
 
           <Button type="submit" isFullWidth>
             SignIn

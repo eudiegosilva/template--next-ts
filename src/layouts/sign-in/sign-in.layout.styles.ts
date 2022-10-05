@@ -56,10 +56,19 @@ export const Description = styled('p', {
 });
 
 export const Form = styled('form', {
-  border: '2px solid red',
-  padding: '$space-04',
+  width: '100%',
+  maxWidth: 'min($container-sm, 100% - 2px)',
+});
 
-  button: {
-    marginTop: '$space-04',
-  },
+export const ErrorMessageWrapper = styled('div', {
+  my: '$space-02',
+  display: 'flex',
+  justifyContent: 'flex-end',
+  position: 'relative',
+});
+
+export const ErrorMessage = styled('span', {
+  color: '$semantic-danger-11',
+  fontSize: '$font-size-02',
+  position: 'absolute',
 });

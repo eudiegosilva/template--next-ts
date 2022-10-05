@@ -4,12 +4,14 @@ import {
   mauveDark,
   pink,
   pinkDark,
+  red,
+  redDark,
   violet,
   violetDark,
   whiteA,
 } from '@radix-ui/colors';
 
-export type ColorCategoryTypes = 'primary' | 'secondary' | 'natural';
+export type ColorCategoryTypes = 'primary' | 'secondary' | 'natural' | 'danger';
 
 export type PaletteTypes = {
   [key in ColorCategoryTypes]: {
@@ -24,11 +26,13 @@ const themes: { [key in ThemeTypes]: PaletteTypes } = {
     primary: violet,
     secondary: pink,
     natural: mauve,
+    danger: red,
   },
   dark: {
     primary: violetDark,
     secondary: pinkDark,
     natural: mauveDark,
+    danger: redDark,
   },
 };
 
@@ -115,12 +119,28 @@ const makePalette = (theme: ThemeTypes) => {
     'natural-12': palette.natural.mauve12,
   };
 
+  const semantic = {
+    'semantic-danger-01': palette.danger.red1,
+    'semantic-danger-02': palette.danger.red2,
+    'semantic-danger-03': palette.danger.red3,
+    'semantic-danger-04': palette.danger.red4,
+    'semantic-danger-05': palette.danger.red5,
+    'semantic-danger-06': palette.danger.red6,
+    'semantic-danger-07': palette.danger.red7,
+    'semantic-danger-08': palette.danger.red8,
+    'semantic-danger-09': palette.danger.red9,
+    'semantic-danger-10': palette.danger.red10,
+    'semantic-danger-11': palette.danger.red11,
+    'semantic-danger-12': palette.danger.red12,
+  };
+
   return {
     ...base,
     ...natural,
     ...primary,
     ...secondary,
     ...text,
+    ...semantic,
   };
 };
 

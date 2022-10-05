@@ -24,10 +24,13 @@ const SignInLayout = () => {
     resolver: yupResolver(signInValidationSchema),
   });
 
-  const { signIn, hasValidCredentials } = useContext(AuthContext);
+  const { signIn, userCredentials } = useContext(AuthContext);
 
   const handleSignIn = async (credentials: FormCredentialsProps) => {
-    if (!hasValidCredentials) {
+    if (
+      credentials.email !== userCredentials.email ||
+      credentials.password !== userCredentials.password
+    ) {
       setError('password', {
         type: 'custom',
         message: 'Email or Password invalid!',

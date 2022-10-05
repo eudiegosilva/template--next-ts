@@ -15,10 +15,15 @@ type UserProps = {
   avatarUrl: string;
 } | null;
 
+type UserCredentialsProps = {
+  email: string;
+  password: string;
+};
+
 type AuthProviderValueProps = {
   isAuthenticated: boolean;
   user: UserProps;
-  hasValidCredentials: boolean;
+  userCredentials: UserCredentialsProps;
   signIn: (data: SignInQuerestProps) => Promise<void>;
 };
 
@@ -30,8 +35,9 @@ const AuthContext = createContext({} as AuthProviderValueProps);
 
 const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<UserProps>(null);
-  const [hasValidCredentials, setHasValidCredentials] =
-    useState<boolean>(false);
+  const [userCredentials, setUserCredentials] = useState(
+    {} as UserCredentialsProps,
+  );
 
   const router = useRouter();
   const isAuthenticated = !!user;
@@ -51,9 +57,12 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
   };
 
   const signIn = async ({ email, password }: SignInQuerestProps) => {
-    const credentials = await getCredentials();
+    setUserCredentials(await getCredentials());
 
-    if (email === credentials.email && password === credentials.password) {
+    if (
+      email === userCredentials.email &&
+      password === userCredentials.password
+    ) {
       const { token, user } = await signInRequest({ email, password });
       apiClient.defaults.headers['Authorization'] = `Bearer ${token}`;
 
@@ -62,16 +71,13 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
       });
 
       setUser(user);
-      setHasValidCredentials(true);
       router.push('/dashboard');
-    } else {
-      setHasValidCredentials(false);
     }
   };
 
   return (
     <AuthContext.Provider
-      value={{ isAuthenticated, user, hasValidCredentials, signIn }}
+      value={{ isAuthenticated, user, userCredentials, signIn }}
     >
       {children}
     </AuthContext.Provider>

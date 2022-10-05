@@ -2,16 +2,16 @@ import { createStitches } from '@stitches/react';
 import type * as Stitches from '@stitches/react';
 
 import {
+  borders,
   colors,
   fonts,
-  borders,
-  sizes,
+  medias,
   shadows,
+  sizes,
   spacings,
   transitions,
-  zIndices,
   utils,
-  medias,
+  zIndices,
 } from './tokens';
 
 export type StichesConfigProps = Stitches.CSS<typeof config>;

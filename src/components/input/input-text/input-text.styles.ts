@@ -34,8 +34,13 @@ export const InputText = styled('input', {
   border: 'none',
   outline: 'none',
   width: '100%',
-  color: '$primary-09',
+  color: '$text-contrast-high',
   fontWeight: '500',
+  '&::placeholder': {
+    color: '$text-contrast-high',
+    fontWeight: '$font-weight-300',
+    opacity: 0.5,
+  },
 });
 
 export const IconWrapper = styled('div', {

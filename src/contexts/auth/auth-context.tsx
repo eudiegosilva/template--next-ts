@@ -18,6 +18,7 @@ type UserProps = {
 type AuthProviderValueProps = {
   isAuthenticated: boolean;
   user: UserProps;
+  hasValidCredentials: boolean;
   signIn: (data: SignInQuerestProps) => Promise<void>;
 };
 
@@ -29,13 +30,14 @@ const AuthContext = createContext({} as AuthProviderValueProps);
 
 const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState<UserProps>(null);
+  const [hasValidCredentials, setHasValidCredentials] =
+    useState<boolean>(false);
 
   const router = useRouter();
   const isAuthenticated = !!user;
 
   useEffect(() => {
     const { 'next-template--token': existingToken } = parseCookies();
-
     if (existingToken) {
       recoverUserData().then((response) => setUser(response.user));
     }
@@ -60,12 +62,17 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
       });
 
       setUser(user);
+      setHasValidCredentials(true);
       router.push('/dashboard');
+    } else {
+      setHasValidCredentials(false);
     }
   };
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, user, signIn }}>
+    <AuthContext.Provider
+      value={{ isAuthenticated, user, hasValidCredentials, signIn }}
+    >
       {children}
     </AuthContext.Provider>
   );

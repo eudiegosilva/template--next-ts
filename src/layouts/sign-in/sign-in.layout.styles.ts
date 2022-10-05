@@ -57,7 +57,7 @@ export const Description = styled('p', {
 
 export const Form = styled('form', {
   width: '100%',
-  maxWidth: 'min($container-sm, 100% - 2px)',
+  maxWidth: 'min($container-sm, 100% - 4px)',
 });
 
 export const ErrorMessageWrapper = styled('div', {

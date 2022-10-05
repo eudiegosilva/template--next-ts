@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -9,7 +9,7 @@ import { signInValidationSchema } from 'validations';
 
 import * as s from './sign-in.layout.styles';
 
-type FormDataProps = {
+type FormCredentialsProps = {
   email: string;
   password: string;
 };
@@ -18,15 +18,22 @@ const SignInLayout = () => {
   const {
     register,
     handleSubmit,
+    setError,
     formState: { errors },
-  } = useForm<FormDataProps>({
+  } = useForm<FormCredentialsProps>({
     resolver: yupResolver(signInValidationSchema),
   });
 
-  const { signIn } = useContext(AuthContext);
+  const { signIn, hasValidCredentials } = useContext(AuthContext);
 
-  const handleSignIn = async (data: FormDataProps) => {
-    await signIn(data);
+  const handleSignIn = async (credentials: FormCredentialsProps) => {
+    if (!hasValidCredentials) {
+      setError('password', {
+        type: 'custom',
+        message: 'Email or Password invalid!',
+      });
+    }
+    await signIn(credentials);
   };
 
   return (
@@ -75,7 +82,7 @@ const SignInLayout = () => {
           <Separator margin="$space-05" />
 
           <Button type="submit" isFullWidth>
-            SignIn
+            Sign In
           </Button>
         </s.Form>
       </s.Wrapper>

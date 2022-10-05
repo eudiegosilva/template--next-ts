@@ -33,7 +33,6 @@ const InputText = ({
       <s.InputText
         type={type}
         name={name}
-        iconPosition={iconPosition}
         {...register(name, { required: true })}
         {...rest}
       />

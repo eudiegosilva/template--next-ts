@@ -39,6 +39,7 @@ export const InputText = styled('input', {
   '&::placeholder': {
     color: '$text-contrast-high',
     fontWeight: '$font-weight-300',
+    fontSize: '$font-size-02',
     opacity: 0.5,
   },
 });

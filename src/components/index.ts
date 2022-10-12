@@ -1,4 +1,8 @@
 /* PLOP_INJECT_COMPONENT_EXPORT */
+export {
+  DashboardArea,
+  type DashboardAreaProps,
+} from './dashboard-area/DashboardArea';
 export { Avatar, type AvatarProps } from './avatar/Avatar';
 export { Button, type ButtonProps } from './button/Button';
 export { ButtonKbd, type ButtonKbdProps } from './button-kbd/ButtonKbd';

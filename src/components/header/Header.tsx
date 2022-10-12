@@ -8,12 +8,15 @@ import { Toggle, Logo } from 'components';
 
 import * as s from './header.styles';
 
-export type HeaderProps = {};
+export type HeaderProps = {
+  hideNavigation?: boolean;
+};
+
 export type LinkItemProps = {
   page: string;
 };
 
-const Header = () => {
+const Header = ({ hideNavigation = false }: HeaderProps) => {
   const { theme, setTheme } = useTheme();
   const [isDarkTheme, setIsDarkTheme] = useState(theme === 'dark');
 
@@ -45,11 +48,13 @@ const Header = () => {
         <s.LogoWrapper onClick={() => router.push('/')}>
           <Logo size={35} color="$primary-09" />
         </s.LogoWrapper>
-        <s.List>
-          {pages.map((page) => (
-            <LinkItem key={page} page={page} />
-          ))}
-        </s.List>
+        {!hideNavigation && (
+          <s.List>
+            {pages.map((page) => (
+              <LinkItem key={page} page={page} />
+            ))}
+          </s.List>
+        )}
         <Toggle onClick={toggleTheme}>
           <ThemeIcon />
         </Toggle>

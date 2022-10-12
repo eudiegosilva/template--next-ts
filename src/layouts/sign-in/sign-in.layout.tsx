@@ -59,8 +59,8 @@ const SignInLayout = () => {
             label="Email"
             type="email"
             icon={<EnvelopeClosedIcon />}
-            placeholder="your@email.com"
-            tooltipContent="email: template@gmail.com"
+            placeholder="user.template@gmail.com"
+            tooltipContent="email: user.template@gmail.com"
             register={register}
           />
           <s.ErrorMessageWrapper>

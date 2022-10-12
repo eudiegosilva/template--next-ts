@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 
-import { PageLayout } from 'components';
+import { PageLayout, DashboardArea } from 'components';
 import { AuthContext } from 'contexts/auth/auth-context';
 
 import * as s from './dashboard.layout.styles';
@@ -11,9 +11,9 @@ const DashboardLayout = () => {
   return (
     <PageLayout title="Dashboard — Template NextTS" showHeader>
       <s.Wrapper>
-        <h1>Dashboard</h1>
+        <h2>{user?.name}</h2>
 
-        <img src={user?.avatarUrl} width={100} />
+        <DashboardArea />
       </s.Wrapper>
     </PageLayout>
   );

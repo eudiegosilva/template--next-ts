@@ -1,5 +1,6 @@
 export {
   /* PLOP_INJECT_COMPONENT_TYPES */
+  type DashboardAreaProps,
   type AvatarProps,
   type ButtonKbdProps,
   type ButtonProps,
